@@ -11,16 +11,13 @@
 			<Color x:Key="ButtonBackgroundColor">#5992FF</Color>
 
 			<!-- font families -->
-			<OnPlatform x:Key="RegularFontFamily" 
-				x:TypeArguments="x:String"
+			<OnPlatform x:Key="RegularFontFamily" x:TypeArguments="x:String"
 				iOS="HelveticaNeue"
 				Android="sans-serif" />
-			<OnPlatform x:Key="LightFontFamily"
-				x:TypeArguments="x:String"
+			<OnPlatform x:Key="LightFontFamily" x:TypeArguments="x:String"
 				iOS="HelveticaNeue-Light"
 				Android="sans-serif-light" />
-			<OnPlatform x:Key="MediumFontFamily"
-				x:TypeArguments="x:String"
+			<OnPlatform x:Key="MediumFontFamily" x:TypeArguments="x:String"
 				iOS="HelveticaNeue-Medium"
 				Android="sans-serif-medium" />
 

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SocialNetwork"
+             x:Class="SocialNetwork.MainPage">
+
+    <ScrollView>
+        <Grid ColumnSpacing="0" RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200" />
+                <!--  header image  -->
+                <RowDefinition Height="AUTO" />
+                <!--  contact details  -->
+                <RowDefinition Height="AUTO" />
+                <!--  stats  -->
+                <RowDefinition Height="AUTO" />
+                <!--  detail text  -->
+                <RowDefinition Height="*" />
+                <!--  bottom button  -->
+            </Grid.RowDefinitions>
+
+
+
+            <BoxView Grid.Row="0" BackgroundColor="Green" />
+
+
+            <BoxView Grid.Row="1" BackgroundColor="Yellow" />
+            <StackLayout Grid.Row="1"
+                     HorizontalOptions="Center"
+                     Padding="0,50,0,00">
+                <Label HorizontalTextAlignment="Center" Text="Ryan Gosling" />
+                <Label HorizontalTextAlignment="Center" Text="ryan.gosling@gmail.com" />
+            </StackLayout>
+
+            <Grid Grid.Row="2"
+              ColumnSpacing="0"
+              RowSpacing="0" Margin="0,30">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <BoxView Grid.Column="0" BackgroundColor="Red" />
+                <BoxView Grid.Column="1" BackgroundColor="Green" />
+                <BoxView Grid.Column="2" BackgroundColor="Blue" />
+            </Grid>
+
+            <Label Grid.Row="3"
+               Margin="20,0"
+               HorizontalTextAlignment="Center"
+               Text="Lorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum Ipsum" />
+
+            <Button Grid.Row="4"
+                Margin="20"
+                BackgroundColor="Blue"
+                BorderRadius="20"
+                HeightRequest="40"
+                Text="Click"
+                VerticalOptions="End" />
+
+            <BoxView Margin="0,-50"
+                 BackgroundColor="Blue"
+                 HeightRequest="100"
+                 HorizontalOptions="Center"
+                 VerticalOptions="End"
+                 WidthRequest="100" />
+        </Grid>
+    </ScrollView>
+
+
+</ContentPage>

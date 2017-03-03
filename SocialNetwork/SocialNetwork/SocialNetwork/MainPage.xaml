@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:SocialNetwork"
@@ -7,64 +7,57 @@
     <ScrollView>
         <Grid ColumnSpacing="0" RowSpacing="0">
             <Grid.RowDefinitions>
-                <RowDefinition Height="200" />
-                <!--  header image  -->
                 <RowDefinition Height="AUTO" />
-                <!--  contact details  -->
                 <RowDefinition Height="AUTO" />
-                <!--  stats  -->
                 <RowDefinition Height="AUTO" />
-                <!--  detail text  -->
                 <RowDefinition Height="*" />
-                <!--  bottom button  -->
+                <RowDefinition Height="AUTO" />
             </Grid.RowDefinitions>
 
+			<!-- header background -->
+			<Image Source="Header.png" Aspect="Fill"/>
 
-
-            <BoxView Grid.Row="0" BackgroundColor="Green" />
-
-
-            <BoxView Grid.Row="1" BackgroundColor="Yellow" />
-            <StackLayout Grid.Row="1"
-                     HorizontalOptions="Center"
-                     Padding="0,50,0,00">
-                <Label HorizontalTextAlignment="Center" Text="Ryan Gosling" />
-                <Label HorizontalTextAlignment="Center" Text="ryan.gosling@gmail.com" />
+			<!-- Profile Name -->
+            <StackLayout Grid.Row="1" HorizontalOptions="Center" Padding="0,50,0,00">
+                <Label HorizontalTextAlignment="Center" Text="Clementine" Style="{StaticResource ProfileNameLabel}"/>
+                <Label HorizontalTextAlignment="Center" Text="Hipster Coffee Drinker" Margin="0,-5" Style="{StaticResource ProfileTagLabel}"/>
             </StackLayout>
 
-            <Grid Grid.Row="2"
-              ColumnSpacing="0"
-              RowSpacing="0" Margin="0,30">
+			<!-- Social Stats Section -->
+            <Grid Grid.Row="2" ColumnSpacing="0" RowSpacing="0" Margin="0,30">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
 
-                <BoxView Grid.Column="0" BackgroundColor="Red" />
-                <BoxView Grid.Column="1" BackgroundColor="Green" />
-                <BoxView Grid.Column="2" BackgroundColor="Blue" />
-            </Grid>
+                <StackLayout>
+                	<Label Text="33" Style="{StaticResource StatsNumberLabel}"/>
+         			<Label Text="Likes" Style="{StaticResource StatsCaptionLabel}"/>
+				</StackLayout>
 
-            <Label Grid.Row="3"
-               Margin="20,0"
-               HorizontalTextAlignment="Center"
-               Text="Lorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum IpsumLorum Ipsum" />
+	            <StackLayout Grid.Column="1">
+                	<Label Text="94" Style="{StaticResource StatsNumberLabel}"/>
+         			<Label Text="Following" Style="{StaticResource StatsCaptionLabel}"/>
+				</StackLayout>
 
-            <Button Grid.Row="4"
-                Margin="20"
-                BackgroundColor="Blue"
-                BorderRadius="20"
-                HeightRequest="40"
-                Text="Click"
-                VerticalOptions="End" />
+	            <StackLayout Grid.Column="2">
+                	<Label Text="957" Style="{StaticResource StatsNumberLabel}"/>
+         			<Label Text="Followers" Style="{StaticResource StatsCaptionLabel}"/>
+				</StackLayout>
+           </Grid>
 
-            <BoxView Margin="0,-50"
-                 BackgroundColor="Blue"
-                 HeightRequest="100"
-                 HorizontalOptions="Center"
-                 VerticalOptions="End"
-                 WidthRequest="100" />
+			<!-- profile description -->
+			<ScrollView Grid.Row="3">
+            	<Label Margin="20,0" HorizontalTextAlignment="Center" Style="{StaticResource MainBodyLabel}" 
+				Text="Spicy jalapeno bacon ipsum dolor amet pork loin pork sint sed occaecat swine ham capicola deserunt pork belly frankfurter magna drumstick." />
+           </ScrollView>
+
+           <!-- follow button -->
+        	<Button Grid.Row="4" Text="Follow" Margin="20" VerticalOptions="End" Style="{StaticResource FollowButton}"/>
+
+			<!-- profile image -->
+			<Image Source="ProfilePic.png" Margin="0,-50" HeightRequest="100" WidthRequest="100" HorizontalOptions="Center" VerticalOptions="End"/>
         </Grid>
     </ScrollView>
 

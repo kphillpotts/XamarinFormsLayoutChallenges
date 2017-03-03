@@ -15,7 +15,8 @@
             </Grid.RowDefinitions>
 
 			<!-- header background -->
-			<Image Source="Header.png" Aspect="Fill"/>
+			<Image Source="HeaderBackground.png" Aspect="AspectFill"/>
+			<Image Source="CurvedMask.png" VerticalOptions="End" Aspect="Fill"/>
 
 			<!-- Profile Name -->
             <StackLayout Grid.Row="1" HorizontalOptions="Center" Padding="0,50,0,00">

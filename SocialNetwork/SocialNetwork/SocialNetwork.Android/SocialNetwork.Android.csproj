@@ -124,16 +124,21 @@
     <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
-    <AndroidResource Include="Resources\drawable\Header.png" />
     <AndroidResource Include="Resources\drawable\ProfilePic.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\Header.png" />
     <AndroidResource Include="Resources\drawable-hdpi\ProfilePic.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\Header.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\ProfilePic.png" />
-    <AndroidResource Include="Resources\drawable-xxhdpi\Header.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ProfilePic.png" />
-    <AndroidResource Include="Resources\drawable-xxxhdpi\Header.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\ProfilePic.png" />
+    <AndroidResource Include="Resources\drawable\CurvedMask.png" />
+    <AndroidResource Include="Resources\drawable\HeaderBackground.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\CurvedMask.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\HeaderBackground.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\CurvedMask.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\HeaderBackground.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\CurvedMask.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\HeaderBackground.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\CurvedMask.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\HeaderBackground.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />

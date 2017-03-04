@@ -4,7 +4,7 @@ Everyone loves a curved background header image and an overlayed profile picture
 
 So let's see how to recreate a simple Social Network profile type page in Xamarin.Forms.
 
-> Design
+[![Design](https://raw.githubusercontent.com/kphillpotts/XamarinFormsLayoutChallenges/master/SocialNetwork/Screenshots/iPhone7.png)]
 
 ## Basic Layout
 Grids are my default layout container for Xamarin.Forms.  They aren't perfect for every situation, but they do provide:

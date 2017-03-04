@@ -30,7 +30,7 @@ The header is just basically an Image that is fills the first row of the Grid.  
 #### Option 1: Pre-made Image
 You could create your header image with a curve at the bottom like this:
 
-![Header Image](https://raw.githubusercontent.com/kphillpotts/XamarinFormsLayoutChallenges/master/SocialNetwork/Screenshots/Header.png)
+![Header Image](https://github.com/kphillpotts/XamarinFormsLayoutChallenges/blob/master/SocialNetwork/Screenshots/HeaderCurved.png)
 
 
 The downside of this is that you have to prepare this ahead of time, and may not be appropriate for dynamically loaded images.

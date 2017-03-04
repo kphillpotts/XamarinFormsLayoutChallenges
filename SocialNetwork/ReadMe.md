@@ -53,7 +53,7 @@ The profile image is just a simple graphic, but the trick to get it to overlay t
 
 And that's it.  
 
-Now I did kind of cheat because I've got a precreated image for this sample, but that's because I just wanted to talk about layout.  In a real app, I highly recommend you use the RoundedImagePlugin from James Montemagno, or use the FFImage Library and apply a rounded effect to the image.
+Now I did kind of cheat because I've got a precreated image for this sample, but that's because I just wanted to talk about layout.  In a real app, I highly recommend you use the [ImageCirclePlugin](https://github.com/jamesmontemagno/ImageCirclePlugin) from James Montemagno, or use the [FFImageLoading](https://github.com/luberda-molinet/FFImageLoading) Library and apply a [CircleTransformation](https://github.com/luberda-molinet/FFImageLoading/wiki/Transformations-Guide#circletransformation) to the image.
 
 ## A little bit of Style
 
@@ -110,6 +110,7 @@ Specifying the fonts allows me to create basic font types which incorporate Font
 And finally we have the styles, these are the various styles for elements I want to use throughout the application.  This basically brings together colours and Fonts into styles which I can apply to my elements.
 
 ```xml
+<!-- Styles -->
 <Style x:Key="ProfileNameLabel" TargetType="Label">
     <Setter Property="TextColor" Value="{StaticResource HeaderTextColor}" />
     <Setter Property="Font" Value="{StaticResource TitleFont}" />
@@ -138,8 +139,7 @@ And finally we have the styles, these are the various styles for elements I want
     <Setter Property="Font" Value="{StaticResource BodyFont}" />
 </Style>
 
-<Style x:Key="FollowButton"
-    TargetType="Button">
+<Style x:Key="FollowButton" TargetType="Button">
     <Setter Property="BackgroundColor" Value="{StaticResource ButtonBackgroundColor}"/>
     <Setter Property="TextColor" Value="White"/>
     <Setter Property="HeightRequest" Value="40"/>

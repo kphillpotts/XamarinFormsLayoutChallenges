@@ -30,14 +30,15 @@ The header is just basically an Image that is fills the first row of the Grid.  
 #### Option 1: Pre-made Image
 You could create your header image with a curve at the bottom like this:
 
-![Curved Header Image](https://raw.githubusercontent.com/kphillpotts/XamarinFormsLayoutChallenges/master/SocialNetwork/Screenshots/CurvedMask-sample.png)
+![Header Image](https://raw.githubusercontent.com/kphillpotts/XamarinFormsLayoutChallenges/master/SocialNetwork/Screenshots/Header.png)
+
 
 The downside of this is that you have to prepare this ahead of time, and may not be appropriate for dynamically loaded images.
 
 #### Option 2: Apply a mask
 Instead we can kind of cheat and just add a mask image over the top of the background image.  This is the option I went for here because it provides more flexibility.  We could for example, have different masks for different OS's or different Idioms (eg. Phone, Tablet, Desktop).  The mask image could be anything design you want, but for this I just went for a simple arc, like this (shadow added so you can see the shape).
 
-> Mask Image
+![Curved Image Mask](https://raw.githubusercontent.com/kphillpotts/XamarinFormsLayoutChallenges/master/SocialNetwork/Screenshots/CurvedMask-sample.png)
 
 It provides a nice effect and the only real downside is that it has to be the same colour as the background
 

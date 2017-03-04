@@ -22,12 +22,12 @@
 				Android="sans-serif-medium" />
 
 			<!-- fonts -->
-			<Font x:Key="ButtonFont" FontSize="14" FontFamily="{StaticResource MediumFontFamily}" />
-			<Font x:Key="BodyFont" FontSize="18" FontFamily="{StaticResource RegularFontFamily}" />
 			<Font x:Key="TitleFont" FontSize="20" FontFamily="{StaticResource MediumFontFamily}" />
+			<Font x:Key="BodyFont" FontSize="18" FontFamily="{StaticResource RegularFontFamily}" />
 			<Font x:Key="TagTextFont" FontSize="18" FontFamily="{StaticResource RegularFontFamily}" />
 			<Font x:Key="StatsNumberFont" FontSize="20" FontFamily="{StaticResource LightFontFamily}" />
 			<Font x:Key="StatsCaptionFont" FontSize="16" FontFamily="{StaticResource LightFontFamily}" />
+			<Font x:Key="ButtonFont" FontSize="14" FontFamily="{StaticResource MediumFontFamily}" />
 
 			<!-- styles -->
 			<Style x:Key="ProfileNameLabel" TargetType="Label">

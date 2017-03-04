@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:SocialNetwork"
-             x:Class="SocialNetwork.MainPage">
+             x:Class="SocialNetwork.MainPage"
+			 BackgroundColor="White">
 
     <ScrollView>
         <Grid ColumnSpacing="0" RowSpacing="0">
@@ -17,6 +18,9 @@
 			<!-- header background -->
 			<Image Source="HeaderBackground.png" Aspect="AspectFill"/>
 			<Image Source="CurvedMask.png" VerticalOptions="End" Aspect="Fill"/>
+
+			<!-- profile image -->
+			<Image Source="ProfilePic.png" Margin="0,0,0,-50" HeightRequest="100" WidthRequest="100" HorizontalOptions="Center" VerticalOptions="End"/>
 
 			<!-- Profile Name -->
             <StackLayout Grid.Row="1" HorizontalOptions="Center" Padding="0,50,0,00">
@@ -57,8 +61,6 @@
            <!-- follow button -->
         	<Button Grid.Row="4" Text="Follow" Margin="20" VerticalOptions="End" Style="{StaticResource FollowButton}"/>
 
-			<!-- profile image -->
-			<Image Source="ProfilePic.png" Margin="0,-50" HeightRequest="100" WidthRequest="100" HorizontalOptions="Center" VerticalOptions="End"/>
         </Grid>
     </ScrollView>
 

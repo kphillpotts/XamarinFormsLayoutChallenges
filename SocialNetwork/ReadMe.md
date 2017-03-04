@@ -20,7 +20,7 @@ The basic structure of the page is a simple Grid with one column.  Within the ce
 
 Using Xamarin Inspector is a pretty good way of looking at the View Hierarchy.
 
->INSPECTOR IMAGE OF PAGE
+![Xamarin Inspector](https://raw.githubusercontent.com/kphillpotts/XamarinFormsLayoutChallenges/master/SocialNetwork/Screenshots/Inspector.png)
 
 ## Let's break it down
 
@@ -30,7 +30,7 @@ The header is just basically an Image that is fills the first row of the Grid.  
 #### Option 1: Pre-made Image
 You could create your header image with a curve at the bottom like this:
 
-![Curved Header Image](http://link)
+![Curved Header Image](https://raw.githubusercontent.com/kphillpotts/XamarinFormsLayoutChallenges/master/SocialNetwork/Screenshots/CurvedMask-sample.png)
 
 The downside of this is that you have to prepare this ahead of time, and may not be appropriate for dynamically loaded images.
 

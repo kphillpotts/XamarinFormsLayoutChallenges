@@ -1,8 +1,10 @@
 # Social Network App Layout Design in Xamarin.Forms
 
-Everyone loves a curved background header image and an overlayed profile picture on their UI's, right?  Well designers sure do.  You'll see this sort of design all over the place.
+Xamarin.Forms is a crazy productive framework for building cross platform apps. However, straight out of the box you might find your User Interfaces are a bit bland. A good understanding of the layout system (and a good graphic designer) are really going to help you make your UI's awesome. (or at least not suck)
 
-So let's see how to recreate a simple Social Network profile type page in Xamarin.Forms.  There are two challenge ingredients for this app.
+So let's see how to recreate a simple Social Network profile type page in Xamarin.Forms. 
+
+ There are two challenge ingredients for this app.
 
 1) Creating a curved header Image
 
@@ -21,9 +23,9 @@ Grids are my default goto layout container for Xamarin.Forms.  They aren't perfe
 
 All of which make them pretty useful for a range of designs.
 
-The basic structure of the page is a simple Grid with one column.  Within the cells are stack layouts for some of the text elements that stack on each other, and to provide the three social stats across the page it has a nested grid with three columns.
+The basic structure of the page is a simple Grid with one column and multiple rows.  Within the cells are stack layouts for some of the text elements that stack on each other, and to provide the three social stats across the page it has a nested grid with three columns.
 
-Using Xamarin Inspector is a pretty good way of looking at the View Hierarchy.
+Using Xamarin Inspector is a pretty good way of visualising at the View Hierarchy.
 
 ![Xamarin Inspector](https://raw.githubusercontent.com/kphillpotts/XamarinFormsLayoutChallenges/master/SocialNetwork/Screenshots/Inspector.png)
 
@@ -41,7 +43,7 @@ You could create your header image with a curve at the bottom like this:
 The downside of this is that you have to prepare this ahead of time, and may not be appropriate for dynamically loaded images.
 
 #### Option 2: Apply a mask
-Instead we can kind of cheat and just add a mask image over the top of the background image.  This is the option I went for here because it provides more flexibility.  We could for example, have different masks for different OS's or different Idioms (eg. Phone, Tablet, Desktop).  The mask image could be any design you want, but for this I just went for a simple arc, like this (shadow added so you can see the shape).
+Instead we can kind of cheat and just add a mask image that lays over the background image at the bottom.  This is the option I went for here because it provides more flexibility.  We could for example, have different masks for different OS's or different Idioms (eg. Phone, Tablet, Desktop).  The mask image could be any design you want, but for this I just went for a simple arc, like this (shadow added so you can see the shape).
 
 ![Curved Image Mask](https://raw.githubusercontent.com/kphillpotts/XamarinFormsLayoutChallenges/master/SocialNetwork/Screenshots/CurvedMask-sample.png)
 
@@ -243,10 +245,12 @@ And finally we have the styles, these are the various styles for elements I want
 ```
 
 ## More to come
-So that's a a quick sample of how to do a pretty common layout in Xamarin.Forms with some overlapping elements.  Always remember, there are lots of different ways we could achieve the same layout, but this is my preferred approach.
+So that's a a quick sample of how to do a pretty common layout in Xamarin.Forms with grids and some overlapping elements.  Always remember, there are lots of different ways we could achieve the same layout, but this what sprang to mind.
 
 I've got a whole series of layouts I'll be posting over the comming weeks to show different layout techniques and ideas. 
 
-As YouTubers would say: "let me know in the comments if you liked this" :)  If you have any layouts that you thing would be interesting to cover, just let me know.
+As YouTubers would say: "let me know in the comments if you liked this" :)  Also, If you have any layouts that you thing would be interesting to cover, just let me know.
 
 Happy Layouts!
+
+Oh yeah, and you can grab the project over at [https://github.com/kphillpotts/XamarinFormsLayoutChallenges](https://github.com/kphillpotts/XamarinFormsLayoutChallenges)

@@ -17,7 +17,7 @@
 
 			<!-- header background -->
 			<Image Source="HeaderBackground.png" Aspect="AspectFill"/>
-			<Image Source="CurvedMask.png" VerticalOptions="End" Aspect="Fill"/>
+			<Image Source="CurvedMask.png" VerticalOptions="End" Aspect="AspectFill" Margin="0,0,0,-1"/>
 
 			<!-- profile image -->
 			<Image Source="ProfilePic.png" Margin="0,0,0,-50" HeightRequest="100" WidthRequest="100" HorizontalOptions="Center" VerticalOptions="End"/>

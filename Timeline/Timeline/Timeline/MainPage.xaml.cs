@@ -14,5 +14,10 @@ namespace Timeline
             InitializeComponent();
             BindingContext = DataFactory.Classes;
         }
+
+        private void timelineListView_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            timelineListView.SelectedItem = null;
+        }
     }
 }

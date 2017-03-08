@@ -12,33 +12,55 @@ namespace Timeline
     {
         public static IList<ExerciseClass> Classes { get; private set; }
 
+        private static DateTime TodayAt(int hour, int minute)
+        {
+            return new DateTime(DateTime.Now.Year,
+                DateTime.Now.Month,
+                DateTime.Now.Day,
+                hour, minute, 0);
+        }
+
         static DataFactory()
         {
+            
             Classes = new ObservableCollection<ExerciseClass>
             {
                 new ExerciseClass
                 {
-                    ClassName = "Aerobics",
-                    Instructor = "Joe Smith",
-                    ClassTime = DateTime.Now.AddHours(2),
+                    ClassName = "Yoga",
+                    Instructor = "Janine Ardmann",
+                    ClassTime = TodayAt(8,00),
+                },
+                 new ExerciseClass
+                {
+                    ClassName = "ABS + Stretch",
+                    Instructor = "Christine Andrews",
+                    ClassTime = TodayAt(9,30),
+                },
+                 //new ExerciseClass
+                //{
+                //    ClassName = "Body Sculpt",
+                //    Instructor = "Sadie Terry",
+                //    ClassTime = DateTime.Now.AddHours(3),
+                //},
+                 new ExerciseClass
+                {
+                    ClassName = "Cycle",
+                    Instructor = "Irene Richards",
+                    ClassTime = TodayAt(12,00),
                 },
                  new ExerciseClass
                 {
                     ClassName = "Aerobics",
-                    Instructor = "Joe Smith",
-                    ClassTime = DateTime.Now.AddHours(-2),
+                    Instructor = "Ethan Lyons",
+                    ClassTime = TodayAt(15,30),
                 },
                  new ExerciseClass
                 {
-                    ClassName = "Aerobics",
-                    Instructor = "Joe Smith",
-                    ClassTime = DateTime.Now.AddHours(3),
-                },
-                 new ExerciseClass
-                {
-                    ClassName = "Aerobics",
-                    Instructor = "Joe Smith",
-                    ClassTime = DateTime.Now.AddHours(1),
+                    ClassName = "Weights",
+                    Instructor = "Arnold",
+                    ClassTime = TodayAt(18,00),
+                    IsLast = true
                 },
             };
         }

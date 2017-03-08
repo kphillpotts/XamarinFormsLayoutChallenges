@@ -4,7 +4,74 @@
              x:Class="Timeline.App">
 	<Application.Resources>
 
-		<!-- Application resource dictionary -->
+        <!-- Application resource dictionary -->
+        <ResourceDictionary>
+            <!-- colors -->
+            <!--<Color x:Key="HeaderTextColor">#585858</Color>
+            <Color x:Key="BodyTextColor">#C3C3C3</Color>-->
 
-	</Application.Resources>
+            <Color x:Key="TimelineColor">#E4B6C3</Color>
+            <Color x:Key="HeaderTextColor">#3C3C3C</Color>
+            <Color x:Key="BodyTextColor">#869EAC</Color>
+            <Color x:Key="TimeColor">#A64C79</Color>
+
+            <!-- font families -->
+            <OnPlatform x:Key="RegularFontFamily" x:TypeArguments="x:String"
+				iOS="HelveticaNeue"
+				Android="sans-serif" />
+            <OnPlatform x:Key="LightFontFamily" x:TypeArguments="x:String"
+				iOS="HelveticaNeue-Light"
+				Android="sans-serif-light" />
+            <OnPlatform x:Key="MediumFontFamily" x:TypeArguments="x:String"
+				iOS="HelveticaNeue-Medium"
+				Android="sans-serif-medium" />
+
+            <!-- fonts -->
+            <Font x:Key="TitleFont" FontSize="20" FontFamily="{StaticResource MediumFontFamily}" />
+            <Font x:Key="HeaderFont" FontSize="30" FontFamily="{StaticResource MediumFontFamily}" />
+            <Font x:Key="BodyFont" FontSize="18" FontFamily="{StaticResource RegularFontFamily}" />
+            <Font x:Key="TagTextFont" FontSize="18" FontFamily="{StaticResource RegularFontFamily}" />
+            <Font x:Key="StatsNumberFont" FontSize="20" FontFamily="{StaticResource LightFontFamily}" />
+            <Font x:Key="SubHeaderFont" FontSize="16" FontFamily="{StaticResource MediumFontFamily}" />
+            <Font x:Key="ButtonFont" FontSize="14" FontFamily="{StaticResource MediumFontFamily}" />
+
+            <!-- styles -->
+            <Style x:Key="ProfileNameLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource HeaderTextColor}" />
+                <Setter Property="Font" Value="{StaticResource TitleFont}" />
+            </Style>
+
+            <Style x:Key="ProfileTagLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource BodyTextColor}" />
+                <Setter Property="Font" Value="{StaticResource TagTextFont}" />
+            </Style>
+
+            <Style x:Key="ClassTimeLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource TimeColor}" />
+                <Setter Property="Font" Value="{StaticResource TitleFont}" />
+            </Style>
+
+            <Style x:Key="ClassNameLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource HeaderTextColor}" />
+                <Setter Property="Font" Value="{StaticResource TitleFont}" />
+            </Style>
+
+            <Style x:Key="PageHeaderLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource HeaderTextColor}" />
+                <Setter Property="Font" Value="{StaticResource HeaderFont}" />
+            </Style>
+            <Style x:Key="ClassInstructorLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource BodyTextColor}" />
+                <Setter Property="Font" Value="{StaticResource SubHeaderFont}" />
+            </Style>
+
+            <Style x:Key="MainBodyLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource BodyTextColor}" />
+                <Setter Property="Font" Value="{StaticResource BodyFont}" />
+            </Style>
+
+
+        </ResourceDictionary>
+
+    </Application.Resources>
 </Application>

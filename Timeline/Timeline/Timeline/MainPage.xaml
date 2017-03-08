@@ -2,22 +2,38 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Timeline"
-             x:Class="Timeline.MainPage">
+             x:Class="Timeline.MainPage"
+             BackgroundColor="White">
 
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="AUTO"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:NotBooleanConverter x:Key="NotBooleanConverter"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+        <ListView x:Name="timelineListView" ItemsSource="{Binding .}" 
+                  ItemTapped="timelineListView_ItemTapped" HasUnevenRows="True" SeparatorVisibility="None">
 
-        <ListView x:Name="timelineListView" ItemsSource="{Binding .}" Grid.Row="1" HasUnevenRows="True" SeparatorVisibility="None">
+            <ListView.Header>
+                <ContentView Padding="20,40,0,30">
+                    <StackLayout>
+                        <Label Text="Class Schedule" Style="{StaticResource PageHeaderLabel}"/>
+                        <Label Text="27 Feb 2017" Style="{StaticResource ClassInstructorLabel}"/>
+                    </StackLayout>
+                </ContentView>
+            </ListView.Header>
+
+        <ListView.Footer>
+            <Image Source="Footer" Aspect="AspectFill"/>
+        </ListView.Footer>
+            
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell Height="100">
                         <Grid RowSpacing="0" ColumnSpacing="0">
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="80"/>
-                                <ColumnDefinition Width="20"/>
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition Width="30"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
                             <Grid.RowDefinitions>
@@ -25,15 +41,15 @@
                                 <RowDefinition Height="*"/>
                             </Grid.RowDefinitions>
 
-                            <Label Text="{Binding ClassTime,StringFormat='{0:H:mm}'}" HorizontalOptions="Center"/>
-                            <Label Text="{Binding ClassName}" Grid.Row="0" Grid.Column="2"/>
-                            <Label Text="{Binding Instructor}" Grid.Row="1" Grid.Column="2"/>
-                            <BoxView BackgroundColor="Red" WidthRequest="2" 
+                            <Label Text="{Binding ClassTime,StringFormat='{0:H:mm}'}" Style="{StaticResource ClassTimeLabel}" HorizontalOptions="Center"/>
+                            <Label Text="{Binding ClassName}" Margin="20,0" Grid.Row="0" Grid.Column="2" Style="{StaticResource ClassNameLabel}"/>
+                            <Label Text="{Binding Instructor}" Margin="20,0" Style="{StaticResource ClassInstructorLabel}" Grid.Row="1" Grid.Column="2"/>
+                            <BoxView BackgroundColor="{StaticResource TimelineColor}" WidthRequest="3" 
                                      HorizontalOptions="Center" 
                                      VerticalOptions="Fill" 
-                                     Margin="0,3,0,0"
                                      Grid.Row="0" Grid.Column="1" 
-                                     Grid.RowSpan="2"/>
+                                     Grid.RowSpan="2" IsVisible="{Binding IsLast, 
+                                    Converter={local:NotBooleanConverter}}"/>
                             <!--<BoxView BackgroundColor="Red" WidthRequest="8" HeightRequest="8" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0" Grid.Column="1"/>-->
                             <Image Source="Bullet.png" Grid.Column="1"/>
                         </Grid>
@@ -43,6 +59,5 @@
                 
             </ListView.ItemTemplate>
         </ListView>
-    </Grid>
 
 </ContentPage>

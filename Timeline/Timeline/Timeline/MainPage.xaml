@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Timeline"
+             x:Class="Timeline.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="AUTO"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <ListView x:Name="timelineListView" ItemsSource="{Binding .}" Grid.Row="1" HasUnevenRows="True" SeparatorVisibility="None">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell Height="100">
+                        <Grid RowSpacing="0" ColumnSpacing="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="80"/>
+                                <ColumnDefinition Width="20"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <Label Text="{Binding ClassTime,StringFormat='{0:H:mm}'}" HorizontalOptions="Center"/>
+                            <Label Text="{Binding ClassName}" Grid.Row="0" Grid.Column="2"/>
+                            <Label Text="{Binding Instructor}" Grid.Row="1" Grid.Column="2"/>
+                            <BoxView BackgroundColor="Red" WidthRequest="2" 
+                                     HorizontalOptions="Center" 
+                                     VerticalOptions="Fill" 
+                                     Margin="0,3,0,0"
+                                     Grid.Row="0" Grid.Column="1" 
+                                     Grid.RowSpan="2"/>
+                            <!--<BoxView BackgroundColor="Red" WidthRequest="8" HeightRequest="8" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0" Grid.Column="1"/>-->
+                            <Image Source="Bullet.png" Grid.Column="1"/>
+                        </Grid>
+                        
+                    </ViewCell>
+                </DataTemplate>
+                
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+
+</ContentPage>

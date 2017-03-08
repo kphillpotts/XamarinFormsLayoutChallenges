@@ -114,6 +114,15 @@
     <BundleResource Include="Resources\Icon-Small%402x.png" />
     <BundleResource Include="Resources\Icon-Small%403x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <BundleResource Include="Resources\ProfilePic.png" />
+    <BundleResource Include="Resources\ProfilePic%402x.png" />
+    <BundleResource Include="Resources\ProfilePic%403x.png" />
+    <BundleResource Include="Resources\CurvedMask.png" />
+    <BundleResource Include="Resources\CurvedMask%402x.png" />
+    <BundleResource Include="Resources\CurvedMask%403x.png" />
+    <BundleResource Include="Resources\HeaderBackground.png" />
+    <BundleResource Include="Resources\HeaderBackground%402x.png" />
+    <BundleResource Include="Resources\HeaderBackground%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -139,7 +148,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SocialNetwork\SocialNetwork.csproj">
-      <Project>{e963bae7-5199-4168-9228-8d545cd52c2c}</Project>
+      <Project>{83BBE914-AB71-4B3A-AE98-CC334FE900AC}</Project>
       <Name>SocialNetwork</Name>
     </ProjectReference>
   </ItemGroup>

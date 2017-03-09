@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
   x:Class="Timeline.MainPage"
   xmlns="http://xamarin.com/schemas/2014/forms"
@@ -16,7 +16,7 @@
     x:Name="timelineListView"
     ItemTapped="timelineListView_ItemTapped"
     ItemsSource="{Binding .}"
-    RowHeight="100"
+    RowHeight="75"
     SeparatorVisibility="None">
 
     <ListView.Header>
@@ -27,13 +27,13 @@
     </ListView.Header>
 
     <ListView.Footer>
-      <Grid>
+      <Grid RowSpacing="0">
         <Grid.RowDefinitions>
           <RowDefinition Height="64" />
-          <RowDefinition Height="AUTO" />
+          <RowDefinition Height="100" />
         </Grid.RowDefinitions>
-        <Image Grid.RowSpan="2" Aspect="AspectFill" Source="YogaImage.png" />
-        <Image Aspect="Fill" HorizontalOptions="Fill" Source="FadeToWhite.png" />
+        <Image Grid.RowSpan="2" Aspect="AspectFill" HorizontalOptions="Fill" VerticalOptions="Start" Source="YogaImage.png" />
+        <Image Aspect="Fill" Grid.RowSpan="2" HorizontalOptions="Fill" Source="FadeToWhite.png" />
       </Grid>
     </ListView.Footer>
 

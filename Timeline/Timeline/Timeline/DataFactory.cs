@@ -28,13 +28,13 @@ namespace Timeline
                 new ExerciseClass
                 {
                     ClassName = "Yoga",
-                    Instructor = "Janine Ardmann",
+                    Instructor = "Maharshi Patanjali",
                     ClassTime = TodayAt(8,00),
                 },
                  new ExerciseClass
                 {
                     ClassName = "ABS + Stretch",
-                    Instructor = "Christine Andrews",
+                    Instructor = "David Hasslehoff",
                     ClassTime = TodayAt(9,30),
                 },
                  //new ExerciseClass
@@ -46,19 +46,19 @@ namespace Timeline
                  new ExerciseClass
                 {
                     ClassName = "Cycle",
-                    Instructor = "Irene Richards",
+                    Instructor = "Lance Armstrong",
                     ClassTime = TodayAt(12,00),
                 },
                  new ExerciseClass
                 {
                     ClassName = "Aerobics",
-                    Instructor = "Ethan Lyons",
+                    Instructor = "Jacky Chan",
                     ClassTime = TodayAt(15,30),
                 },
                  new ExerciseClass
                 {
                     ClassName = "Weights",
-                    Instructor = "Arnold",
+                    Instructor = "Arnold Schwarzenegger",
                     ClassTime = TodayAt(18,00),
                     IsLast = true
                 },

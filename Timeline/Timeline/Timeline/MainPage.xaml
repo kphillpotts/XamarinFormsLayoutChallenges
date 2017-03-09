@@ -1,63 +1,85 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:Timeline"
-             x:Class="Timeline.MainPage"
-             BackgroundColor="White">
+<ContentPage
+  x:Class="Timeline.MainPage"
+  xmlns="http://xamarin.com/schemas/2014/forms"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:local="clr-namespace:Timeline"
+  BackgroundColor="White">
 
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <local:NotBooleanConverter x:Key="NotBooleanConverter"/>
-        </ResourceDictionary>
-    </ContentPage.Resources>
-    
-        <ListView x:Name="timelineListView" ItemsSource="{Binding .}" 
-                  ItemTapped="timelineListView_ItemTapped" HasUnevenRows="True" SeparatorVisibility="None">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <local:NotBooleanConverter x:Key="NotBooleanConverter" />
+    </ResourceDictionary>
+  </ContentPage.Resources>
 
-            <ListView.Header>
-                <ContentView Padding="20,40,0,30">
-                    <StackLayout>
-                        <Label Text="Class Schedule" Style="{StaticResource PageHeaderLabel}"/>
-                        <Label Text="27 Feb 2017" Style="{StaticResource ClassInstructorLabel}"/>
-                    </StackLayout>
-                </ContentView>
-            </ListView.Header>
+  <ListView
+    x:Name="timelineListView"
+    ItemTapped="timelineListView_ItemTapped"
+    ItemsSource="{Binding .}"
+    RowHeight="100"
+    SeparatorVisibility="None">
 
-        <ListView.Footer>
-            <Image Source="Footer" Aspect="AspectFill"/>
-        </ListView.Footer>
-            
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell Height="100">
-                        <Grid RowSpacing="0" ColumnSpacing="0">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="100"/>
-                                <ColumnDefinition Width="30"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="*"/>
-                            </Grid.RowDefinitions>
+    <ListView.Header>
+      <StackLayout Padding="20,40,0,30">
+        <Label Style="{StaticResource PageHeaderLabel}" Text="Class Schedule" />
+        <Label Style="{StaticResource SubHeaderLabel}" Text="8 Mar 2017" />
+      </StackLayout>
+    </ListView.Header>
 
-                            <Label Text="{Binding ClassTime,StringFormat='{0:H:mm}'}" Style="{StaticResource ClassTimeLabel}" HorizontalOptions="Center"/>
-                            <Label Text="{Binding ClassName}" Margin="20,0" Grid.Row="0" Grid.Column="2" Style="{StaticResource ClassNameLabel}"/>
-                            <Label Text="{Binding Instructor}" Margin="20,0" Style="{StaticResource ClassInstructorLabel}" Grid.Row="1" Grid.Column="2"/>
-                            <BoxView BackgroundColor="{StaticResource TimelineColor}" WidthRequest="3" 
-                                     HorizontalOptions="Center" 
-                                     VerticalOptions="Fill" 
-                                     Grid.Row="0" Grid.Column="1" 
-                                     Grid.RowSpan="2" IsVisible="{Binding IsLast, 
-                                    Converter={local:NotBooleanConverter}}"/>
-                            <!--<BoxView BackgroundColor="Red" WidthRequest="8" HeightRequest="8" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0" Grid.Column="1"/>-->
-                            <Image Source="Bullet.png" Grid.Column="1"/>
-                        </Grid>
-                        
-                    </ViewCell>
-                </DataTemplate>
-                
-            </ListView.ItemTemplate>
-        </ListView>
+    <ListView.Footer>
+      <Grid>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="64" />
+          <RowDefinition Height="AUTO" />
+        </Grid.RowDefinitions>
+        <Image Grid.RowSpan="2" Aspect="AspectFill" Source="YogaImage.png" />
+        <Image Aspect="Fill" HorizontalOptions="Fill" Source="FadeToWhite.png" />
+      </Grid>
+    </ListView.Footer>
 
+    <ListView.ItemTemplate>
+      <DataTemplate>
+        <ViewCell>
+          <Grid ColumnSpacing="0" RowSpacing="0">
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="100" />
+              <ColumnDefinition Width="30" />
+              <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+              <RowDefinition Height="Auto" />
+              <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Label HorizontalOptions="Center" Style="{StaticResource ClassTimeLabel}" Text="{Binding ClassTime, StringFormat='{0:H:mm}'}" />
+
+            <Label
+              Grid.Column="2"
+              Margin="20,0"
+              Style="{StaticResource ClassNameLabel}"
+              Text="{Binding ClassName}" />
+
+            <Label
+              Grid.Row="1"
+              Grid.Column="2"
+              Margin="20,0"
+              Style="{StaticResource ClassInstructorLabel}"
+              Text="{Binding Instructor}" />
+
+            <BoxView
+              Grid.RowSpan="2"
+              Grid.Column="1"
+              BackgroundColor="{StaticResource TimelineColor}"
+              HorizontalOptions="Center"
+              IsVisible="{Binding IsLast, Converter={local:NotBooleanConverter}}"
+              VerticalOptions="Fill"
+              WidthRequest="3" />
+
+            <Image Grid.Column="1" Source="Bullet.png" />
+
+          </Grid>
+        </ViewCell>
+      </DataTemplate>
+    </ListView.ItemTemplate>
+  </ListView>
 </ContentPage>

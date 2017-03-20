@@ -114,6 +114,25 @@
     <BundleResource Include="Resources\Icon-Small%402x.png" />
     <BundleResource Include="Resources\Icon-Small%403x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <BundleResource Include="Resources\Fiji.jpg" />
+    <BundleResource Include="Resources\Person_2.jpg" />
+    <BundleResource Include="Resources\Person_1.jpg" />
+    <BundleResource Include="Resources\ShadowOverlay.png" />
+    <BundleResource Include="Resources\ShadowOverlay%402x.png" />
+    <BundleResource Include="Resources\ShadowOverlay%403x.png" />
+    <BundleResource Include="Resources\Hipster.jpg" />
+    <BundleResource Include="Resources\Eye.png" />
+    <BundleResource Include="Resources\Eye%402x.png" />
+    <BundleResource Include="Resources\Eye%403x.png" />
+    <BundleResource Include="Resources\greekisland.jpg" />
+    <BundleResource Include="Resources\ColoredBackground.png" />
+    <BundleResource Include="Resources\ColoredBackground%402x.png" />
+    <BundleResource Include="Resources\ColoredBackground%403x.png" />
+    <BundleResource Include="Resources\snow.jpg" />
+    <BundleResource Include="Resources\combi.jpg" />
+    <BundleResource Include="Resources\Person_3.jpg" />
+    <BundleResource Include="Resources\Person_4.jpg" />
+    <BundleResource Include="Resources\Person_5.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -132,10 +151,16 @@
       <HintPath>..\..\packages\Xamarin.Forms.2.3.3.193\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.iOS" />
+    <Reference Include="ImageCircle.Forms.Plugin.Abstractions">
+      <HintPath>..\..\packages\Xam.Plugins.Forms.ImageCircle.1.8.1\lib\Xamarin.iOS10\ImageCircle.Forms.Plugin.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageCircle.Forms.Plugin.iOS">
+      <HintPath>..\..\packages\Xam.Plugins.Forms.ImageCircle.1.8.1\lib\Xamarin.iOS10\ImageCircle.Forms.Plugin.iOS.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GreatPlaces\GreatPlaces.csproj">
-      <Project>{4dc151f8-26a1-4bd8-bb73-f20588066957}</Project>
+      <Project>{E7EF6AC8-909F-437C-BD1C-B8703B2BA5AA}</Project>
       <Name>GreatPlaces</Name>
     </ProjectReference>
   </ItemGroup>

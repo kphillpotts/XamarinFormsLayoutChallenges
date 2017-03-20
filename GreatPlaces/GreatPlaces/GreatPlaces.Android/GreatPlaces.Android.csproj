@@ -24,6 +24,7 @@
     <JavaOptions />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <AndroidTlsProvider></AndroidTlsProvider>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -94,6 +95,12 @@
     <Reference Include="Xamarin.Forms.Xaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Forms.2.3.3.193\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
+    <Reference Include="ImageCircle.Forms.Plugin.Abstractions">
+      <HintPath>..\..\packages\Xam.Plugins.Forms.ImageCircle.1.8.1\lib\MonoAndroid10\ImageCircle.Forms.Plugin.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageCircle.Forms.Plugin.Android">
+      <HintPath>..\..\packages\Xam.Plugins.Forms.ImageCircle.1.8.1\lib\MonoAndroid10\ImageCircle.Forms.Plugin.Android.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -110,6 +117,28 @@
     <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable\Eye.png" />
+    <AndroidResource Include="Resources\drawable\ShadowOverlay.png" />
+    <AndroidResource Include="Resources\drawable\ColoredBackground.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\Eye.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ShadowOverlay.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ColoredBackground.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Eye.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ShadowOverlay.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ColoredBackground.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Eye.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ShadowOverlay.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ColoredBackground.png" />
+    <AndroidResource Include="Resources\drawable\snow.jpg" />
+    <AndroidResource Include="Resources\drawable\combi.jpg" />
+    <AndroidResource Include="Resources\drawable\greekisland.jpg" />
+    <AndroidResource Include="Resources\drawable\Hipster.jpg" />
+    <AndroidResource Include="Resources\drawable\Person_2.jpg" />
+    <AndroidResource Include="Resources\drawable\Person_1.jpg" />
+    <AndroidResource Include="Resources\drawable\Fiji.jpg" />
+    <AndroidResource Include="Resources\drawable\Person_3.jpg" />
+    <AndroidResource Include="Resources\drawable\Person_4.jpg" />
+    <AndroidResource Include="Resources\drawable\Person_5.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
@@ -121,7 +150,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GreatPlaces\GreatPlaces.csproj">
-      <Project>{4dc151f8-26a1-4bd8-bb73-f20588066957}</Project>
+      <Project>{E7EF6AC8-909F-437C-BD1C-B8703B2BA5AA}</Project>
       <Name>GreatPlaces</Name>
     </ProjectReference>
   </ItemGroup>

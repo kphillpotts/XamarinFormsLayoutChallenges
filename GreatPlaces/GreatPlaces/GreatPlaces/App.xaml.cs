@@ -13,7 +13,10 @@ namespace GreatPlaces
         {
             InitializeComponent();
 
-            MainPage = new GreatPlaces.MainPage();
+			var navigationPage = new NavigationPage(new MainPage());
+			navigationPage.BarBackgroundColor = Color.Black;
+			navigationPage.BarTextColor = Color.White;
+			MainPage = navigationPage;
         }
 
         protected override void OnStart()

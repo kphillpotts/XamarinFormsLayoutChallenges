@@ -12,6 +12,7 @@ namespace GreatPlaces
         public MainPage()
         {
             InitializeComponent();
+			BindingContext = DataFactory.Places;
         }
     }
 }

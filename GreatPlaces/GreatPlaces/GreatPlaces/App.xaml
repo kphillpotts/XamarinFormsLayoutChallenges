@@ -4,7 +4,66 @@
              x:Class="GreatPlaces.App">
 	<Application.Resources>
 
-		<!-- Application resource dictionary -->
+		        <!--  Application resource dictionary  -->
+        <ResourceDictionary>
+            <Color x:Key="BodyTextColor">#FFFFFF</Color>
+
+
+            <!--  font families  -->
+            <OnPlatform
+                x:Key="RegularFontFamily"
+                x:TypeArguments="x:String"
+                Android="sans-serif"
+                iOS="HelveticaNeue" />
+            <OnPlatform
+                x:Key="LightFontFamily"
+                x:TypeArguments="x:String"
+                Android="sans-serif-light"
+                iOS="HelveticaNeue-Light" />
+            <OnPlatform
+                x:Key="MediumFontFamily"
+                x:TypeArguments="x:String"
+                Android="sans-serif-medium"
+                iOS="HelveticaNeue-Medium" />
+            <OnPlatform
+                x:Key="BoldFontFamily"
+                x:TypeArguments="x:String"
+                Android="sans-serif-medium"
+                iOS="HelveticaNeue-Bold" />
+
+            <!--  fonts  -->
+            <Font
+                x:Key="TitleFont"
+                FontFamily="{StaticResource BoldFontFamily}"
+                FontSize="20" />
+            <Font
+                x:Key="HandleFont"
+                FontFamily="{StaticResource BoldFontFamily}"
+                FontSize="12" />
+            <Font
+                x:Key="BodyFont"
+                FontFamily="{StaticResource LightFontFamily}"
+                FontSize="12" />
+
+
+            <!--  styles  -->
+			<Style x:Key="TitleLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource BodyTextColor}" />
+                <Setter Property="Font" Value="{StaticResource TitleFont}" />
+            </Style>
+
+			<Style x:Key="HandleLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource BodyTextColor}" />
+                <Setter Property="Font" Value="{StaticResource HandleFont}" />
+            </Style>
+
+			<Style x:Key="BodyLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource BodyTextColor}" />
+                <Setter Property="Font" Value="{StaticResource BodyFont}" />
+            </Style>
+			
+        </ResourceDictionary>
+
 
 	</Application.Resources>
 </Application>

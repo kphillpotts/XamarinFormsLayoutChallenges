@@ -32,10 +32,52 @@ namespace Formula1.Data
                 },
                 new Driver
                 {
-                    Name = "Valtteri Bottas",
-                    Team = "Mercedes",
+                    Name = "Daniel Ricciardo",
+                    Team = "Red Bull Racing",
+                    Country = "Australia",
+                    Points = 107
+                },
+                new Driver
+                {
+                    Name = "Kimi Raikkonen",
+                    Team = "Ferrari",
                     Country = "Finland",
-                    Points = 160
+                    Points = 83
+                },
+                new Driver
+                {
+                    Name = "Sergio Perez",
+                    Team = "Force India",
+                    Country = "Mexico",
+                    Points = 45
+                },
+                new Driver
+                {
+                    Name = "Max Verstappen",
+                    Team = "Red Bull Racing",
+                    Country = "Netherlands",
+                    Points = 45
+                },
+                new Driver
+                {
+                    Name = "Esteban Ocon",
+                    Team = "Force India",
+                    Country = "France",
+                    Points = 39
+                },
+                new Driver
+                {
+                    Name = "Carlos Sainz",
+                    Team = "Toro Rosso",
+                    Country = "Spain",
+                    Points = 29
+                },
+                new Driver
+                {
+                    Name = "Felipe Massa",
+                    Team = "Williams",
+                    Country = "Brazil",
+                    Points = 22
                 },
             };
         }

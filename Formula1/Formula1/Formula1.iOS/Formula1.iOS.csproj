@@ -131,10 +131,10 @@
     <BundleResource Include="Resources\United Kingdom.png" />
     <BundleResource Include="Resources\DriversHeader.png" />
     <BundleResource Include="Resources\Carlos Sainz.png" />
-    <BundleResource Include="Resources\DANIEL RICCIARDO.png" />
-    <BundleResource Include="Resources\ESTEBAN OCON.png" />
-    <BundleResource Include="Resources\FELIPE MASSA.png" />
-    <BundleResource Include="Resources\KIMI RAIKKONEN.png" />
+    <BundleResource Include="Resources\Daniel Ricciardo.png" />
+    <BundleResource Include="Resources\Esteban Ocon.png" />
+    <BundleResource Include="Resources\Felipe Massa.png" />
+    <BundleResource Include="Resources\Kimi Raikkonen.png" />
     <BundleResource Include="Resources\Lewis Hamilton.png" />
     <BundleResource Include="Resources\Max Verstappen.png" />
     <BundleResource Include="Resources\Sergio Perez.png" />
@@ -174,8 +174,8 @@
     <BundleResource Include="Resources\Sebastian Vettel.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\Flags\" />
     <Folder Include="Resources\Drivers\" />
+    <Folder Include="Resources\Flags\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />

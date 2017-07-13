@@ -14,16 +14,15 @@
     </ContentPage.Resources>
     
     
-    <ListView ItemsSource="{Binding}" RowHeight="75" SeparatorVisibility="None">
+    <ListView ItemsSource="{Binding}" RowHeight="90" SeparatorVisibility="None">
 
         <ListView.Header>
-            <Grid VerticalOptions="Fill" HorizontalOptions="Fill" HeightRequest="250">
+            <Grid>
                 <Grid.RowDefinitions>
-                <RowDefinition Height="AUTO"/>
+                <RowDefinition Height="200"/>
                 </Grid.RowDefinitions>
                 <Image Source="DriversHeader.png" Aspect="AspectFill"/>
-                <Label Text="2017 Driver Championship" Style="{StaticResource ImageHeaderLabel}"
-                FontAttributes="Bold" FontSize="20"/>
+                <Label Text="2017 Driver Championship" Style="{StaticResource ImageHeaderLabel}"/>
             </Grid>
         </ListView.Header>
 
@@ -41,18 +40,16 @@
                             <RowDefinition Height="1"/>
                         </Grid.RowDefinitions>
 
-                        <controls:CircleImage Source="{Binding Photo}" 
-                        WidthRequest="50" HeightRequest="50" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center"
-                        Margin="0,0,10,0"/>
+                        <controls:CircleImage Source="{Binding Photo}" Style="{StaticResource DriverCircleImage}"/>
 
                         <StackLayout Grid.Column="1" VerticalOptions="Center">
-                            <Label Text="{Binding Name}" Style="{StaticResource DriverNameLabel}" FontSize="20" FontAttributes="Bold"/>
-                            <Label Text="{Binding Team}" Style="{StaticResource TeamNameLabel}" FontSize="16" />
+                            <Label Text="{Binding Name}" Style="{StaticResource DriverNameLabel}" />
+                            <Label Text="{Binding Team}" Style="{StaticResource TeamNameLabel}"/>
                         </StackLayout>
 
                         <StackLayout Grid.Column="2" VerticalOptions="Center">
-                            <Label Text="{Binding Points}" HorizontalOptions="End" Style="{StaticResource PointsLabel}" FontSize="20" FontAttributes="Bold"/>
-                            <Image Source="{Binding Country}" WidthRequest="30" HeightRequest="15" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="End"/>
+                            <Label Text="{Binding Points}" Style="{StaticResource PointsLabel}"/>
+                            <Image Source="{Binding Country}" Style="{StaticResource FlagImage}"/>
                         </StackLayout>
 
                         <BoxView HeightRequest="1" Grid.Row="1" Grid.Column="1" BackgroundColor="{StaticResource SeperatorColor}"/>                    </Grid>

@@ -13,7 +13,11 @@ namespace Formula1
         {
             InitializeComponent();
 
-            MainPage = new Formula1.DriverRankingsPage();
+            MainPage = new NavigationPage(new Formula1.DriverRankingsPage())
+            {
+                BarBackgroundColor = Color.FromHex("#9E4368"),
+                BarTextColor = Color.White
+            };
         }
 
         protected override void OnStart()

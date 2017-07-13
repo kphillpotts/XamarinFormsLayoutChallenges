@@ -1,4 +1,6 @@
 ﻿using Formula1.Data;
+using Formula1.Models;
+using Formula1.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +19,14 @@ namespace Formula1
         {
             InitializeComponent();
             BindingContext = DataRepository.Drivers;
+        }
+
+
+        private void DriverList_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            DriverList.SelectedItem = null;
+            Driver selectedDriver = e.Item as Driver;
+            this.Navigation.PushAsync(new DriverDetailsPage(selectedDriver));
         }
     }
 }

@@ -36,8 +36,14 @@
             <x:Double x:Key="TitleFontSize">20</x:Double>
             <x:Double x:Key="LargeTitleFontSize">26</x:Double>
             <x:Double x:Key="BodyFontSize">18</x:Double>
-            
-            
+            <x:Double x:Key="StatsNumberFontSize">30</x:Double>
+            <x:Double x:Key="StatsCaptionFontSize">16</x:Double>
+            <x:Double x:Key="TextBlockFontSize">14</x:Double>
+            <x:Double x:Key="TableFontSize">12</x:Double>
+            <x:Double x:Key="PageHeaderFontSize">30</x:Double>
+            <x:Double x:Key="PageSubHeaderFontSize">20</x:Double>
+
+
             <Style x:Key="PointsLabel" TargetType="Label">
                 <Setter Property="TextColor" Value="{StaticResource PointsTextColor}"/>
                 <Setter Property="FontFamily" Value="{StaticResource MediumFontFamily}" />
@@ -58,6 +64,35 @@
                 <Setter Property="Margin" Value="0,-3,0,0"/>
             </Style>
 
+            <Style x:Key="ProfileNameLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource DriverNameColor}" />
+                <Setter Property="FontFamily" Value="{StaticResource MediumFontFamily}" />
+                <Setter Property="FontSize" Value="{StaticResource PageHeaderFontSize}" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+            </Style>
+
+            <Style x:Key="ProfileTagLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource TeamNameColor}" />
+                <Setter Property="FontFamily" Value="{StaticResource RegularFontFamily}" />
+                <Setter Property="FontSize" Value="{StaticResource PageSubHeaderFontSize}" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+            </Style>
+
+            <Style x:Key="StatsNumberLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource PointsTextColor}" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="FontFamily" Value="{StaticResource LightFontFamily}" />
+                <Setter Property="FontSize" Value="{StaticResource StatsNumberFontSize}" />
+            </Style>
+
+            <Style x:Key="StatsCaptionLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource DriverNameColor}" />
+                <Setter Property="Margin" Value="0,-5,0,0" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="FontFamily" Value="{StaticResource LightFontFamily}" />
+                <Setter Property="FontSize" Value="{StaticResource StatsCaptionFontSize}" />
+            </Style>
+
             <Style x:Key="ImageHeaderLabel" TargetType="Label">
                 <Setter Property="TextColor" Value="{StaticResource ImageHeaderTextColor}"/>
                 <Setter Property="FontFamily" Value="{StaticResource MediumFontFamily}" />
@@ -76,6 +111,17 @@
                 <Setter Property="Margin" Value="0,0,10,0"/>
             </Style>
 
+            <Style x:Key="DriverCircleImageProfile" TargetType="controls:CircleImage">
+                <Setter Property="WidthRequest" Value="100"/>
+                <Setter Property="HeightRequest" Value="100"/>
+                <Setter Property="Aspect" Value="AspectFill"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="BorderColor" Value="White"/>
+                <Setter Property="BorderThickness" Value="5"/>
+            </Style>
+
+
             <Style x:Key="FlagImage" TargetType="Image">
                 <Setter Property="WidthRequest" Value="30"/>
                 <Setter Property="HeightRequest" Value="15"/>
@@ -83,6 +129,29 @@
                 <Setter Property="VerticalOptions" Value="Center"/>
                 <Setter Property="HorizontalOptions" Value="End"/>
             </Style>
+
+            <Style x:Key="MainBodyLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource DriverNameColor}" />
+                <Setter Property="FontFamily" Value="{StaticResource LightFontFamily}" />
+                <Setter Property="FontSize" Value="{StaticResource TextBlockFontSize}" />
+                
+            </Style>
+
+
+            <Style x:Key="TableValueLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource PointsTextColor}"/>
+                <Setter Property="FontFamily" Value="{StaticResource MediumFontFamily}" />
+                <Setter Property="FontSize" Value="{StaticResource TableFontSize}" />
+                <Setter Property="HorizontalTextAlignment" Value="End"/>
+                <Setter Property="LineBreakMode" Value="WordWrap"/>
+            </Style>
+
+            <Style x:Key="TableTextLabel" TargetType="Label">
+                <Setter Property="FontFamily" Value="{StaticResource MediumFontFamily}" />
+                <Setter Property="TextColor" Value="{StaticResource DriverNameColor}"/>
+                <Setter Property="FontSize" Value="{StaticResource TableFontSize}" />
+            </Style>
+
 
 
         </ResourceDictionary>

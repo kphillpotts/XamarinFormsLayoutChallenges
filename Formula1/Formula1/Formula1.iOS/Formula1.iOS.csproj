@@ -114,7 +114,7 @@
     <BundleResource Include="Resources\Icon-Small%402x.png" />
     <BundleResource Include="Resources\Icon-Small%403x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
-    <BundleResource Include="Resources\Russian Federation.png" />
+    <BundleResource Include="Resources\RussianFederation.png" />
     <BundleResource Include="Resources\Netherlands.png" />
     <BundleResource Include="Resources\Mexico.png" />
     <BundleResource Include="Resources\Italy.png" />
@@ -128,17 +128,17 @@
     <BundleResource Include="Resources\Germany.png" />
     <BundleResource Include="Resources\Sweden.png" />
     <BundleResource Include="Resources\Spain.png" />
-    <BundleResource Include="Resources\United Kingdom.png" />
+    <BundleResource Include="Resources\UnitedKingdom.png" />
     <BundleResource Include="Resources\DriversHeader.png" />
-    <BundleResource Include="Resources\Carlos Sainz.png" />
-    <BundleResource Include="Resources\Daniel Ricciardo.png" />
-    <BundleResource Include="Resources\Esteban Ocon.png" />
-    <BundleResource Include="Resources\Felipe Massa.png" />
-    <BundleResource Include="Resources\Kimi Raikkonen.png" />
-    <BundleResource Include="Resources\Lewis Hamilton.png" />
-    <BundleResource Include="Resources\Max Verstappen.png" />
-    <BundleResource Include="Resources\Sergio Perez.png" />
-    <BundleResource Include="Resources\Valtteri Bottas.png" />
+    <BundleResource Include="Resources\CarlosSainz.png" />
+    <BundleResource Include="Resources\DanielRicciardo.png" />
+    <BundleResource Include="Resources\EstebanOcon.png" />
+    <BundleResource Include="Resources\FelipeMassa.png" />
+    <BundleResource Include="Resources\KimiRaikkonen.png" />
+    <BundleResource Include="Resources\LewisHamilton.png" />
+    <BundleResource Include="Resources\MaxVerstappen.png" />
+    <BundleResource Include="Resources\SergioPerez.png" />
+    <BundleResource Include="Resources\ValtteriBottas.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ImageCircle.Forms.Plugin.Abstractions, Version=1.8.1.0, Culture=neutral, processorArchitecture=MSIL">
@@ -171,11 +171,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Sebastian Vettel.png" />
+    <BundleResource Include="Resources\SebastianVettel.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\Drivers\" />
     <Folder Include="Resources\Flags\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\CurvedMask.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />

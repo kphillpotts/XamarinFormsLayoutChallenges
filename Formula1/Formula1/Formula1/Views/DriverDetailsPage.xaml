@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:Formula1;assembly=Formula1"
+            xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+             x:Class="Formula1.Views.DriverDetailsPage"
+             Title="Driver Details"
+             BackgroundColor="White">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:ImageResourceConverter x:Key="imageResourceCvt" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+
+    <ScrollView>
+        <StackLayout Orientation="Vertical">
+
+            <Grid ColumnSpacing="0" RowSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <!--  header background  -->
+                <Image Aspect="AspectFill" Source="DriversHeader.png" Opacity="1"/>
+                <Image Aspect="Fill" Margin="0,-1,0,-1" HeightRequest="20" Source="CurvedMask.png" VerticalOptions="End" />
+                <controls:CircleImage Grid.Row="0" TranslationY="50" VerticalOptions="End" Source="{Binding Photo}" Style="{StaticResource DriverCircleImageProfile}"/>
+            </Grid>
+
+            <!--  profile image  -->
+            
+
+            <!--  Profile Name  -->
+            <StackLayout Margin="0,50,0,0" HorizontalOptions="Center">
+                <Label Style="{StaticResource ProfileNameLabel}" Text="{Binding Name}" />
+                <Label Margin="0,-5" Style="{StaticResource ProfileTagLabel}" Text="{Binding Team}"/>
+            </StackLayout>
+
+                <!--  Social Stats Section  -->
+                <Grid ColumnSpacing="0" RowSpacing="0" Margin="0,20,0,10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout>
+                        <Label Style="{StaticResource StatsNumberLabel}" Text="{Binding Podiums}" />
+                        <Label Style="{StaticResource StatsCaptionLabel}" Text="Podiums" />
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="1">
+                        <Label Style="{StaticResource StatsNumberLabel}" Text="{Binding Points}" />
+                        <Label Style="{StaticResource StatsCaptionLabel}" Text="Points" />
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="2">
+                        <Label Style="{StaticResource StatsNumberLabel}" Text="{Binding HighestRaceFinish}" />
+                        <Label Style="{StaticResource StatsCaptionLabel}" Text="Highest" />
+                    </StackLayout>
+                </Grid>
+
+                <BoxView Margin="20,10" HeightRequest="1" BackgroundColor="{StaticResource SeperatorColor}"/>
+
+                <Label Margin="20,10" Style="{StaticResource MainBodyLabel}" Text="{Binding Bio}" HorizontalTextAlignment="Center" />
+                <!--<BoxView Margin="10" HeightRequest="1" BackgroundColor="{StaticResource SeperatorColor}" VerticalOptions="Center"/>-->
+
+                <BoxView Margin="20,10" HeightRequest="1" BackgroundColor="{StaticResource SeperatorColor}"/>
+
+
+                <Grid RowSpacing="20" Margin="20,10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="AUTO"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="AUTO"/>
+                    <RowDefinition Height="AUTO"/>
+                    <RowDefinition Height="AUTO"/>
+                    <RowDefinition Height="AUTO"/>
+                    <RowDefinition Height="AUTO"/>
+                    <RowDefinition Height="AUTO"/>
+                 </Grid.RowDefinitions>
+
+                <Label Grid.Column="0" Grid.Row="0" Text="Grands Prix entered" Style="{StaticResource TableTextLabel}"/>
+                <Label Grid.Column="1" Grid.Row="0" Text="{Binding GrandPrixEnetered}" Style="{StaticResource TableValueLabel}"/>
+
+                <Label Grid.Column="0" Grid.Row="1" Text="World Championships" Style="{StaticResource TableTextLabel}"/>
+                <Label Grid.Column="1" Grid.Row="1" Text="{Binding WorldChampionships}" Style="{StaticResource TableValueLabel}"/>
+
+                <Label Grid.Column="0" Grid.Row="2" Text="Highest race finish" Style="{StaticResource TableTextLabel}"/>
+                <Label Grid.Column="1" Grid.Row="2" Text="{Binding HighestRaceFinish}" Style="{StaticResource TableValueLabel}"/>
+
+                <Label Grid.Column="0" Grid.Row="3" Text="Highest grid position" Style="{StaticResource TableTextLabel}"/>
+                <Label Grid.Column="1" Grid.Row="3" Text="{Binding HighestGridPosition}" Style="{StaticResource TableValueLabel}"/>
+
+                <Label Grid.Column="0" Grid.Row="4" Text="Date of birth" Style="{StaticResource TableTextLabel}"/>
+                <Label Grid.Column="1" Grid.Row="4" Text="{Binding DateOfBirth, StringFormat='{0:dd MMM yyyy}'}" Style="{StaticResource TableValueLabel}"/>
+
+                <Label Grid.Column="0" Grid.Row="5" Text="Country" Style="{StaticResource TableTextLabel}"/>
+                <Label Grid.Column="1" Grid.Row="5" Text="{Binding Country}" Style="{StaticResource TableValueLabel}" />
+
+            </Grid>
+
+
+            <!--  profile description  -->
+            <!--<Label Margin="20,20" Grid.Row="6" Style="{StaticResource MainBodyLabel}" Text="{Binding Bio}" />-->
+
+
+
+            <!--  follow button  -->
+            <!--<Button Grid.Row="4" Margin="20" Style="{StaticResource FollowButton}" Text="Follow" />-->
+        </StackLayout>
+    </ScrollView>
+
+
+</ContentPage>

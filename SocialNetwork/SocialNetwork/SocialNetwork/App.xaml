@@ -7,6 +7,7 @@
             <Color x:Key="HeaderTextColor">#585858</Color>
             <Color x:Key="BodyTextColor">#C3C3C3</Color>
             <Color x:Key="ButtonBackgroundColor">#5992FF</Color>
+            <Color x:Key="BackgroundColor">White</Color>
 
             <!--  font families  -->
             <OnPlatform x:Key="RegularFontFamily" x:TypeArguments="x:String">
@@ -37,13 +38,14 @@
                 <Setter Property="TextColor" Value="{StaticResource HeaderTextColor}" />
                 <Setter Property="FontFamily" Value="{StaticResource MediumFontFamily}" />
                 <Setter Property="FontSize" Value="{StaticResource TitleFontSize}" />
-
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
             </Style>
 
             <Style x:Key="ProfileTagLabel" TargetType="Label">
                 <Setter Property="TextColor" Value="{StaticResource BodyTextColor}" />
                 <Setter Property="FontFamily" Value="{StaticResource RegularFontFamily}" />
                 <Setter Property="FontSize" Value="{StaticResource TagTextFontSize}" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
             </Style>
 
             <Style x:Key="StatsNumberLabel" TargetType="Label">
@@ -65,6 +67,7 @@
                 <Setter Property="TextColor" Value="{StaticResource BodyTextColor}" />
                 <Setter Property="FontFamily" Value="{StaticResource RegularFontFamily}" />
                 <Setter Property="FontSize" Value="{StaticResource BodyFontSize}" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
             </Style>
 
             <Style x:Key="FollowButton" TargetType="Button">

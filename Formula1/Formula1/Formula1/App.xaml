@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Formula1.App">
+	<Application.Resources>
+
+        <ResourceDictionary>
+		<!-- Application resource dictionary -->
+            <Color x:Key="PointsTextColor">#A33B71</Color>
+            <Color x:Key="DriverNameColor">#444444</Color>
+            <Color x:Key="TeamNameColor">#809AAF</Color>
+
+            <Style x:Key="PointsLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource PointsTextColor}"/>
+            </Style>
+
+            <Style x:Key="DriverNameLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource DriverNameColor}"/>
+            </Style>
+
+            <Style x:Key="TeamNameLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource TeamNameColor}"/>
+            </Style>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

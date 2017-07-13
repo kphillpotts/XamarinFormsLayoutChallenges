@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Formula1.App">
@@ -6,9 +6,11 @@
 
         <ResourceDictionary>
 		<!-- Application resource dictionary -->
-            <Color x:Key="PointsTextColor">#A33B71</Color>
+            <Color x:Key="PointsTextColor">#9E4368</Color>
             <Color x:Key="DriverNameColor">#444444</Color>
             <Color x:Key="TeamNameColor">#809AAF</Color>
+            <Color x:Key="ImageHeaderTextColor">White</Color>
+            <Color x:Key="SeperatorColor">#F1F2F6</Color>
 
             <Style x:Key="PointsLabel" TargetType="Label">
                 <Setter Property="TextColor" Value="{StaticResource PointsTextColor}"/>
@@ -21,6 +23,15 @@
             <Style x:Key="TeamNameLabel" TargetType="Label">
                 <Setter Property="TextColor" Value="{StaticResource TeamNameColor}"/>
             </Style>
+
+            <Style x:Key="ImageHeaderLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource ImageHeaderTextColor}"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+            </Style>
+
 
         </ResourceDictionary>
     </Application.Resources>

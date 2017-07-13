@@ -1,9 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Formula1;assembly=Formula1"
              xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
-             x:Class="Formula1.DriverRankingsPage">
+
+            x:Class="Formula1.DriverRankingsPage"
+            BackgroundColor="White">
 
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -12,25 +14,36 @@
     </ContentPage.Resources>
     
     
-    <ListView ItemsSource="{Binding}" RowHeight="75">
+    <ListView ItemsSource="{Binding}" RowHeight="75" SeparatorVisibility="None">
 
         <ListView.Header>
-            <BoxView HeightRequest="200" BackgroundColor="Red"/>
+            <Grid VerticalOptions="Fill" HorizontalOptions="Fill" HeightRequest="250">
+                <Grid.RowDefinitions>
+                <RowDefinition Height="AUTO"/>
+                </Grid.RowDefinitions>
+                <Image Source="DriversHeader.png" Aspect="AspectFill"/>
+                <Label Text="2017 Driver Championship" Style="{StaticResource ImageHeaderLabel}"
+                FontAttributes="Bold" FontSize="20"/>
+            </Grid>
         </ListView.Header>
 
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell >
-                    <Grid Margin="0,0,10,0">
+                    <Grid Margin="10,0,10,0" RowSpacing="0" ColumnSpacing="0">
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="75"/>
+                            <ColumnDefinition Width="AUTO"/>
                             <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="50"/>
+                            <ColumnDefinition Width="AUTO"/>
                         </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="1"/>
+                        </Grid.RowDefinitions>
 
-                        <!--<BoxView WidthRequest="50" HeightRequest="50" BackgroundColor="Green" VerticalOptions="Center" HorizontalOptions="Center"/>-->
-                        <controls:CircleImage Source="{Binding Photo}" WidthRequest="50" HeightRequest="50" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center"/>
-                        <!--<Image Source="{Binding Photo}" WidthRequest="50" HeightRequest="50" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center"/>-->
+                        <controls:CircleImage Source="{Binding Photo}" 
+                        WidthRequest="50" HeightRequest="50" Aspect="AspectFill" VerticalOptions="Center" HorizontalOptions="Center"
+                        Margin="0,0,10,0"/>
 
                         <StackLayout Grid.Column="1" VerticalOptions="Center">
                             <Label Text="{Binding Name}" Style="{StaticResource DriverNameLabel}" FontSize="20" FontAttributes="Bold"/>
@@ -39,9 +52,10 @@
 
                         <StackLayout Grid.Column="2" VerticalOptions="Center">
                             <Label Text="{Binding Points}" HorizontalOptions="End" Style="{StaticResource PointsLabel}" FontSize="20" FontAttributes="Bold"/>
-                            <Image Source="{Binding CountryFlag}" WidthRequest="30" HeightRequest="15" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="End"/>
+                            <Image Source="{Binding Country}" WidthRequest="30" HeightRequest="15" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="End"/>
                         </StackLayout>
-                    </Grid>
+
+                        <BoxView HeightRequest="1" Grid.Row="1" Grid.Column="1" BackgroundColor="{StaticResource SeperatorColor}"/>                    </Grid>
                 </ViewCell>
             </DataTemplate>
         </ListView.ItemTemplate>

@@ -15,7 +15,7 @@ namespace Formula1.Models
         public string CountryFlag {
             get
             {
-                return $"{Country}.jpg";
+                return $"{Country}.png";
             }
         }
 

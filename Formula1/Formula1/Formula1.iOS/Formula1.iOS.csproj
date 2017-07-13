@@ -114,6 +114,31 @@
     <BundleResource Include="Resources\Icon-Small%402x.png" />
     <BundleResource Include="Resources\Icon-Small%403x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <BundleResource Include="Resources\Russian Federation.png" />
+    <BundleResource Include="Resources\Netherlands.png" />
+    <BundleResource Include="Resources\Mexico.png" />
+    <BundleResource Include="Resources\Italy.png" />
+    <BundleResource Include="Resources\France.png" />
+    <BundleResource Include="Resources\Finland.png" />
+    <BundleResource Include="Resources\Denmark.png" />
+    <BundleResource Include="Resources\Canada.png" />
+    <BundleResource Include="Resources\Brazil.png" />
+    <BundleResource Include="Resources\Belgium.png" />
+    <BundleResource Include="Resources\Australia.png" />
+    <BundleResource Include="Resources\Germany.png" />
+    <BundleResource Include="Resources\Sweden.png" />
+    <BundleResource Include="Resources\Spain.png" />
+    <BundleResource Include="Resources\United Kingdom.png" />
+    <BundleResource Include="Resources\DriversHeader.png" />
+    <BundleResource Include="Resources\Carlos Sainz.png" />
+    <BundleResource Include="Resources\DANIEL RICCIARDO.png" />
+    <BundleResource Include="Resources\ESTEBAN OCON.png" />
+    <BundleResource Include="Resources\FELIPE MASSA.png" />
+    <BundleResource Include="Resources\KIMI RAIKKONEN.png" />
+    <BundleResource Include="Resources\Lewis Hamilton.png" />
+    <BundleResource Include="Resources\Max Verstappen.png" />
+    <BundleResource Include="Resources\Sergio Perez.png" />
+    <BundleResource Include="Resources\Valtteri Bottas.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ImageCircle.Forms.Plugin.Abstractions, Version=1.8.1.0, Culture=neutral, processorArchitecture=MSIL">
@@ -141,15 +166,16 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Formula1\Formula1.csproj">
-      <Project>{e863e0f1-06d0-481d-a479-7ac0925b9789}</Project>
+      <Project>{BA54DC9D-183B-48DD-83BF-86365627771D}</Project>
       <Name>Formula1</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Germany.jpg" />
+    <BundleResource Include="Resources\Sebastian Vettel.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Sebastian Vettel.png" />
+    <Folder Include="Resources\Flags\" />
+    <Folder Include="Resources\Drivers\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />

@@ -39,7 +39,9 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Converters\ImageResourceConverter.cs" />
+    <Compile Include="Converters\NotBooleanConverter.cs" />
     <Compile Include="Data\DataRepository.cs" />
+    <Compile Include="Models\Race.cs" />
     <Compile Include="Views\DriverDetailsPage.xaml.cs">
       <DependentUpon>DriverDetailsPage.xaml</DependentUpon>
     </Compile>
@@ -51,6 +53,9 @@
     </Compile>
     <Compile Include="Models\Driver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\RaceSchedulePage.xaml.cs">
+      <DependentUpon>RaceSchedulePage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MainPage.xaml">
@@ -90,6 +95,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\DriverDetailsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\RaceSchedulePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

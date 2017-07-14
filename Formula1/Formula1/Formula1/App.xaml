@@ -64,6 +64,20 @@
                 <Setter Property="Margin" Value="0,-3,0,0"/>
             </Style>
 
+            <Style x:Key="RaceNameLabel" TargetType="Label">
+                <Setter Property="FontFamily" Value="{StaticResource MediumFontFamily}" />
+                <Setter Property="TextColor" Value="{StaticResource DriverNameColor}"/>
+                <Setter Property="FontSize" Value="{StaticResource StatsCaptionFontSize}" />
+            </Style>
+
+            <Style x:Key="RaceTrackLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource TeamNameColor}"/>
+                <Setter Property="FontFamily" Value="{StaticResource LightFontFamily}" />
+                <Setter Property="FontSize" Value="{StaticResource TextBlockFontSize}" />
+                <Setter Property="Margin" Value="0,-3,0,0"/>
+            </Style>
+
+
             <Style x:Key="ProfileNameLabel" TargetType="Label">
                 <Setter Property="TextColor" Value="{StaticResource DriverNameColor}" />
                 <Setter Property="FontFamily" Value="{StaticResource MediumFontFamily}" />

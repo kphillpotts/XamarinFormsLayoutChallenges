@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Formula1.Views.RaceSchedulePage"
+            xmlns:local="clr-namespace:Formula1;assembly=Formula1"
+            xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+             BackgroundColor="White">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:NotBooleanConverter x:Key="NotBooleanConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <ListView
+    x:Name="timelineListView"
+    ItemTapped="timelineListView_ItemTapped"
+    ItemsSource="{Binding}"
+    RowHeight="75"
+    SeparatorVisibility="None">
+
+        <ListView.Header>
+            <Grid Margin="0,0,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="20"/>
+                </Grid.RowDefinitions>
+                <Image Source="DriversHeader.png" Aspect="AspectFill"/>
+                <Label Text="2017 Race Schedule" Style="{StaticResource ImageHeaderLabel}"/>
+            </Grid>
+
+        </ListView.Header>
+
+        <ListView.Footer>
+            <Grid RowSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="32" />
+                    <RowDefinition Height="AUTO" />
+                </Grid.RowDefinitions>
+                <Image Grid.Row="2" Aspect="AspectFill" HorizontalOptions="Fill" VerticalOptions="End" Source="F1Footer.png" />
+            </Grid>
+        </ListView.Footer>
+
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Grid ColumnSpacing="0" RowSpacing="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100" />
+                            <ColumnDefinition Width="30" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <Label HorizontalOptions="Center" Style="{StaticResource TableValueLabel}" Text="{Binding Date, StringFormat='{0:MMM dd}'}" VerticalOptions="Center"/>
+
+                        <Label Grid.Column="2" Margin="20,0" Style="{StaticResource RaceNameLabel}" Text="{Binding Name}" />
+
+                        <Label Grid.Row="1" Grid.Column="2" Margin="20,0" Style="{StaticResource RaceTrackLabel}" Text="{Binding Circuit}" />
+
+                        <BoxView Grid.RowSpan="2" Grid.Column="1" Margin="0,3,0,-3" BackgroundColor="{StaticResource PointsTextColor}" HorizontalOptions="Center" VerticalOptions="Fill" WidthRequest="3" 
+                                 IsVisible="{Binding IsLast, Converter={local:NotBooleanConverter}}"/>
+
+                        <Image Grid.Column="1" HorizontalOptions="Center" Source="Bullet.png" />
+
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+
+</ContentPage>

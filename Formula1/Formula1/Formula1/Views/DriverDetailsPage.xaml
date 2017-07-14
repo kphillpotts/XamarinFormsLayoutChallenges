@@ -16,7 +16,6 @@
 
     <ScrollView>
         <StackLayout Orientation="Vertical">
-
             <Grid ColumnSpacing="0" RowSpacing="0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="100" />
@@ -26,11 +25,10 @@
                 <!--  header background  -->
                 <Image Aspect="AspectFill" Source="DriversHeader.png" Opacity="1"/>
                 <Image Aspect="Fill" Margin="0,-1,0,-1" HeightRequest="20" Source="CurvedMask.png" VerticalOptions="End" />
+
+                <!--  profile image  -->
                 <controls:CircleImage Grid.Row="0" TranslationY="50" VerticalOptions="End" Source="{Binding Photo}" Style="{StaticResource DriverCircleImageProfile}"/>
             </Grid>
-
-            <!--  profile image  -->
-            
 
             <!--  Profile Name  -->
             <StackLayout Margin="0,50,0,0" HorizontalOptions="Center">
@@ -38,39 +36,39 @@
                 <Label Margin="0,-5" Style="{StaticResource ProfileTagLabel}" Text="{Binding Team}"/>
             </StackLayout>
 
-                <!--  Social Stats Section  -->
-                <Grid ColumnSpacing="0" RowSpacing="0" Margin="0,20,0,10">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>
+            <!--  Social Stats Section  -->
+            <Grid ColumnSpacing="0" RowSpacing="0" Margin="0,20,0,10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
 
-                    <StackLayout>
-                        <Label Style="{StaticResource StatsNumberLabel}" Text="{Binding Podiums}" />
-                        <Label Style="{StaticResource StatsCaptionLabel}" Text="Podiums" />
-                    </StackLayout>
+                <StackLayout>
+                    <Label Style="{StaticResource StatsNumberLabel}" Text="{Binding Podiums}" />
+                    <Label Style="{StaticResource StatsCaptionLabel}" Text="Podiums" />
+                </StackLayout>
 
-                    <StackLayout Grid.Column="1">
-                        <Label Style="{StaticResource StatsNumberLabel}" Text="{Binding Points}" />
-                        <Label Style="{StaticResource StatsCaptionLabel}" Text="Points" />
-                    </StackLayout>
+                <StackLayout Grid.Column="1">
+                    <Label Style="{StaticResource StatsNumberLabel}" Text="{Binding Points}" />
+                    <Label Style="{StaticResource StatsCaptionLabel}" Text="Points" />
+                </StackLayout>
 
-                    <StackLayout Grid.Column="2">
-                        <Label Style="{StaticResource StatsNumberLabel}" Text="{Binding HighestRaceFinish}" />
-                        <Label Style="{StaticResource StatsCaptionLabel}" Text="Highest" />
-                    </StackLayout>
-                </Grid>
+                <StackLayout Grid.Column="2">
+                    <Label Style="{StaticResource StatsNumberLabel}" Text="{Binding HighestRaceFinish}" />
+                    <Label Style="{StaticResource StatsCaptionLabel}" Text="Highest" />
+                </StackLayout>
+            </Grid>
 
-                <BoxView Margin="20,10" HeightRequest="1" BackgroundColor="{StaticResource SeperatorColor}"/>
+            <BoxView Margin="20,10" HeightRequest="1" BackgroundColor="{StaticResource SeperatorColor}"/>
 
-                <Label Margin="20,10" Style="{StaticResource MainBodyLabel}" Text="{Binding Bio}" HorizontalTextAlignment="Center" />
-                <!--<BoxView Margin="10" HeightRequest="1" BackgroundColor="{StaticResource SeperatorColor}" VerticalOptions="Center"/>-->
+            <Label Margin="20,10" Style="{StaticResource MainBodyLabel}" Text="{Binding Bio}" HorizontalTextAlignment="Center" />
+            <!--<BoxView Margin="10" HeightRequest="1" BackgroundColor="{StaticResource SeperatorColor}" VerticalOptions="Center"/>-->
 
-                <BoxView Margin="20,10" HeightRequest="1" BackgroundColor="{StaticResource SeperatorColor}"/>
+            <BoxView Margin="20,10" HeightRequest="1" BackgroundColor="{StaticResource SeperatorColor}"/>
 
 
-                <Grid RowSpacing="20" Margin="20,10">
+            <Grid RowSpacing="20" Margin="20,10">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="AUTO"/>
@@ -103,16 +101,7 @@
                 <Label Grid.Column="1" Grid.Row="5" Text="{Binding Country}" Style="{StaticResource TableValueLabel}" />
 
             </Grid>
-
-
-            <!--  profile description  -->
-            <!--<Label Margin="20,20" Grid.Row="6" Style="{StaticResource MainBodyLabel}" Text="{Binding Bio}" />-->
-
-
-
-            <!--  follow button  -->
-            <!--<Button Grid.Row="4" Margin="20" Style="{StaticResource FollowButton}" Text="Follow" />-->
-        </StackLayout>
+      </StackLayout>
     </ScrollView>
 
 

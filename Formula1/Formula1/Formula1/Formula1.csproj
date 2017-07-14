@@ -56,6 +56,9 @@
     <Compile Include="Views\RaceSchedulePage.xaml.cs">
       <DependentUpon>RaceSchedulePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\TabbedContainer.xaml.cs">
+      <DependentUpon>TabbedContainer.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MainPage.xaml">
@@ -64,6 +67,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="App.xaml">
       <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TabbedContainer.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

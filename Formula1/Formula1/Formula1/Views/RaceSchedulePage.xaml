@@ -1,10 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Formula1.Views.RaceSchedulePage"
+             x:Class="Formula1.RaceSchedulePage"
             xmlns:local="clr-namespace:Formula1;assembly=Formula1"
             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
-             BackgroundColor="White">
+            Title = "Race Schedule"
+    BackgroundColor="White">
 
     <ContentPage.Resources>
         <ResourceDictionary>

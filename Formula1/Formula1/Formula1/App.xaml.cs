@@ -12,12 +12,12 @@ namespace Formula1
         public App()
         {
             InitializeComponent();
-
-            MainPage = new NavigationPage(new Formula1.Views.RaceSchedulePage())
-            {
-                BarBackgroundColor = Color.FromHex("#9E4368"),
-                BarTextColor = Color.White
-            };
+            MainPage = new TabbedContainer();
+            //MainPage = new NavigationPage(new Formula1.RaceSchedulePage())
+            //{
+            //    BarBackgroundColor = Color.FromHex("#9E4368"),
+            //    BarTextColor = Color.White
+            //};
         }
 
         protected override void OnStart()

@@ -192,6 +192,30 @@
   <ItemGroup>
     <BundleResource Include="Resources\F1Footer.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\F1Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\F1Backdrop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Calendar_Black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Medal_Black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Trophy_Black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Medal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Trophy.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

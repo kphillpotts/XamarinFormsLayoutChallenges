@@ -65,7 +65,7 @@
                         <BoxView Grid.RowSpan="2" Grid.Column="1" Margin="0,3,0,-3" BackgroundColor="{StaticResource PointsTextColor}" HorizontalOptions="Center" VerticalOptions="Fill" WidthRequest="3" 
                                  IsVisible="{Binding IsLast, Converter={local:NotBooleanConverter}}"/>
 
-                        <Image Grid.Column="1" HorizontalOptions="Center" Source="Bullet.png" />
+                        <Image Grid.Column="1" HorizontalOptions="Center" Source="Bullet.png" VerticalOptions="Start" />
 
                     </Grid>
                 </ViewCell>

@@ -53,8 +53,17 @@
     </Compile>
     <Compile Include="Models\Driver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\MasterDetailContainer.xaml.cs">
+      <DependentUpon>MasterDetailContainer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MenuPage.xaml.cs">
+      <DependentUpon>MenuPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\RaceSchedulePage.xaml.cs">
       <DependentUpon>RaceSchedulePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StackPage.xaml.cs">
+      <DependentUpon>StackPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\TabbedContainer.xaml.cs">
       <DependentUpon>TabbedContainer.xaml</DependentUpon>
@@ -107,6 +116,24 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\RaceSchedulePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\MasterDetailContainer.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\MenuPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\StackPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

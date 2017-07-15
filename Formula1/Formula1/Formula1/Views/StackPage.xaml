@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Formula1.Views.StackPage"
+             BackgroundColor="#333333">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" Padding="30" Spacing="10" >
+            <Image Source="F1Logo" WidthRequest="100" HeightRequest="100"/>
+            <Label Text="Email" TextColor="White"/>
+            <Entry Placeholder="yourname@email.com"/>
+            <Label Text="Password" TextColor="White"/>
+            <Entry Placeholder="password" IsPassword="True"/>
+            <Button Text="Login" BackgroundColor="#FF0000" TextColor="White" FontAttributes="Bold"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -23,5 +23,11 @@ namespace Formula1
         {
             timelineListView.SelectedItem = null;
         }
+
+        ~RaceSchedulePage()
+        {
+            System.Diagnostics.Debug.WriteLine("Finishing RaceSchedulePage page");
+        }
+
     }
 }

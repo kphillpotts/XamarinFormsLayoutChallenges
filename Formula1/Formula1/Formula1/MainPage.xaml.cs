@@ -12,6 +12,11 @@ namespace Formula1
         public MainPage()
         {
             InitializeComponent();
+
+
+
+
         }
     }
+
 }

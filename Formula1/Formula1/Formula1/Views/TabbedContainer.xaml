@@ -9,15 +9,15 @@
 
         <NavigationPage Title="Drivers"
             BarBackgroundColor = "{StaticResource PointsTextColor}"
-            BarTextColor = "White">
+            BarTextColor = "White" Icon="Trophy">
             <x:Arguments>
                 <local:DriverRankingsPage/>
             </x:Arguments>
         </NavigationPage>
     
-        <NavigationPage Title="Drivers"
+        <NavigationPage Title="Races"
             BarBackgroundColor = "{StaticResource PointsTextColor}"
-            BarTextColor = "White">
+            BarTextColor = "White" Icon="Calendar">
             <x:Arguments>
                 <local:RaceSchedulePage/>
             </x:Arguments>

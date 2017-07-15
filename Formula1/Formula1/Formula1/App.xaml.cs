@@ -12,7 +12,8 @@ namespace Formula1
         public App()
         {
             InitializeComponent();
-            MainPage = new TabbedContainer();
+            //MainPage = new TabbedContainer();
+            MainPage = new MasterDetailContainer();
             //MainPage = new NavigationPage(new Formula1.RaceSchedulePage())
             //{
             //    BarBackgroundColor = Color.FromHex("#9E4368"),

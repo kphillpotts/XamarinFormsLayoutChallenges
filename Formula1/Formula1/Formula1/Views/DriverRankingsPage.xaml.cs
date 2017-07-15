@@ -21,12 +21,30 @@ namespace Formula1
             BindingContext = DataRepository.Drivers;
         }
 
+        //protected override void OnAppearing()
+        //{
+
+        //    base.OnAppearing();
+        //}
+
+        //protected override void OnDisappearing()
+        //{
+        //    BindingContext = null;
+        //    Content = null;
+        //    base.OnDisappearing();
+        //    GC.Collect();
+        //}
 
         private void DriverList_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             DriverList.SelectedItem = null;
             Driver selectedDriver = e.Item as Driver;
             this.Navigation.PushAsync(new DriverDetailsPage(selectedDriver));
+        }
+
+        ~DriverRankingsPage()
+        {
+            System.Diagnostics.Debug.WriteLine("Finishing DriverRankings page");
         }
     }
 }

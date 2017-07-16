@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:Formula1;assembly=Formula1"
+             x:Class="Formula1.RaceDetailsPage"
+             BackgroundColor="White">
+
+    <ScrollView>
+        <StackLayout Orientation="Vertical">
+            <Grid ColumnSpacing="0" RowSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <!--  header background  -->
+                <Image Aspect="AspectFill" Source="RaceBackground3.png" Opacity="1"/>
+                <Image Aspect="Fill" Margin="0,-1,0,-1" HeightRequest="20" Source="CurvedMask.png" VerticalOptions="End" />
+            </Grid>
+
+            <!--  Profile Name  -->
+            <StackLayout Margin="0,20,0,20" HorizontalOptions="Center">
+                <Label Style="{StaticResource ProfileNameLabel}" Text="{Binding Name}" />
+                <Label Margin="0,-5" Style="{StaticResource ProfileTagLabel}" Text="{Binding Circuit}"/>
+            </StackLayout>
+            
+            <BoxView Margin="20,10" HeightRequest="1" BackgroundColor="{StaticResource SeperatorColor}"/>
+
+            <Grid RowSpacing="20" Margin="20,10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="AUTO"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="AUTO"/>
+                    <RowDefinition Height="AUTO"/>
+                    <RowDefinition Height="AUTO"/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Column="0" Grid.Row="0" Text="Number of Laps" Style="{StaticResource TableTextLabel}"/>
+                <Label Grid.Column="1" Grid.Row="0" Text="{Binding NumberOfLaps}" Style="{StaticResource TableValueLabel}"/>
+
+                <Label Grid.Column="0" Grid.Row="1" Text="Circuit Length" Style="{StaticResource TableTextLabel}"/>
+                <Label Grid.Column="1" Grid.Row="1" Text="{Binding CircuitLength, StringFormat='{0:0.000} km'}" Style="{StaticResource TableValueLabel}"/>
+                <Label Grid.Column="0" Grid.Row="2" Text="Race Distance" Style="{StaticResource TableTextLabel}"/>
+                <Label Grid.Column="1" Grid.Row="2" Text="{Binding RaceDistance, StringFormat='{0:0.000} km'}" Style="{StaticResource TableValueLabel}"/>
+
+            </Grid>
+
+            <BoxView Margin="20,10" HeightRequest="1" BackgroundColor="{StaticResource SeperatorColor}"/>
+
+            <Image Source="{Binding MapUrl}" Margin="20,0,20,20"/>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

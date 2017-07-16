@@ -115,7 +115,8 @@ namespace Formula1.Data
                     CircuitLength=5.303,
                     RaceDistance=307.574,
                     NumberOfLaps=58,
-                    Date = new DateTime(2017, 03, 26)
+                    Date = new DateTime(2017, 03, 26),
+                    MapUrl = @"https://www.formula1.com/content/fom-website/en/championship/races/2017/Australia/_jcr_content/circuitMap.img.png/1458295855148.png"
                 },
                 new Race
                 {

@@ -1,4 +1,5 @@
 ﻿using Formula1.Data;
+using Formula1.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +23,8 @@ namespace Formula1
         private void timelineListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             timelineListView.SelectedItem = null;
+            Race selectedRace = e.Item as Race;
+            this.Navigation.PushAsync(new RaceDetailsPage(selectedRace));
         }
 
         ~RaceSchedulePage()

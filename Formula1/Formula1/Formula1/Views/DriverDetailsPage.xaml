@@ -7,12 +7,6 @@
              Title="Driver Details"
              BackgroundColor="White">
 
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <local:ImageResourceConverter x:Key="imageResourceCvt" />
-        </ResourceDictionary>
-    </ContentPage.Resources>
-
 
     <ScrollView>
         <StackLayout Orientation="Vertical">

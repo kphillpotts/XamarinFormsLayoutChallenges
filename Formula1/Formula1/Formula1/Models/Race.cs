@@ -14,6 +14,7 @@ namespace Formula1.Models
         public double CircuitLength { get; set; }
         public double RaceDistance { get; set; }
         public DateTime Date { get; set; }
+        public string MapUrl { get; set; }
 
         public bool IsLast { get; set; }
 

@@ -7,13 +7,6 @@
              Title="Championship"
             BackgroundColor="White">
 
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <local:ImageResourceConverter x:Key="imageResourceCvt" />
-        </ResourceDictionary>
-    </ContentPage.Resources>
-    
-    
     <ListView x:Name="DriverList" ItemsSource="{Binding}" RowHeight="90" SeparatorVisibility="None" ItemTapped="DriverList_ItemTapped">
 
         <ListView.Header>

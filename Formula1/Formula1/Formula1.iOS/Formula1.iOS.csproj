@@ -139,6 +139,9 @@
     <BundleResource Include="Resources\MaxVerstappen.png" />
     <BundleResource Include="Resources\SergioPerez.png" />
     <BundleResource Include="Resources\ValtteriBottas.png" />
+    <BundleResource Include="Resources\RaceBackground2.png" />
+    <BundleResource Include="Resources\RaceBackground.png" />
+    <BundleResource Include="Resources\RaceBackground3.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ImageCircle.Forms.Plugin.Abstractions, Version=1.8.1.0, Culture=neutral, processorArchitecture=MSIL">

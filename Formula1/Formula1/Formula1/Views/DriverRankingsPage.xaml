@@ -22,7 +22,7 @@
                 <RowDefinition Height="200"/>
                 </Grid.RowDefinitions>
                 <Image Source="DriversHeader.png" Aspect="AspectFill"/>
-                <Label Text="2017 Driver Championship" Style="{StaticResource ImageHeaderLabel}"/>
+                <Label Text="Driver Rankinngs" Style="{StaticResource ImageHeaderLabel}"/>
             </Grid>
         </ListView.Header>
 

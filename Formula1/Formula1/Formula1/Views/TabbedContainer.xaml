@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <TabbedPage 
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     xmlns:local="clr-namespace:Formula1;assembly=Formula1"
     x:Class="Formula1.TabbedContainer"
-    BarBackgroundColor="{StaticResource PointsTextColor}"
+    BarBackgroundColor="{StaticResource PrimaryThemeColor}"
     BarTextColor="White">
 
         <NavigationPage Title="Drivers"
-            BarBackgroundColor = "{StaticResource PointsTextColor}"
+            BarBackgroundColor = "{StaticResource PrimaryThemeColor}"
             BarTextColor = "White" Icon="Trophy">
             <x:Arguments>
                 <local:DriverRankingsPage/>
@@ -16,7 +16,7 @@
         </NavigationPage>
     
         <NavigationPage Title="Races"
-            BarBackgroundColor = "{StaticResource PointsTextColor}"
+            BarBackgroundColor = "{StaticResource PrimaryThemeColor}"
             BarTextColor = "White" Icon="Calendar">
             <x:Arguments>
                 <local:RaceSchedulePage/>

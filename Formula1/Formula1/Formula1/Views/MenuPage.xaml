@@ -11,7 +11,7 @@
                 <RowDefinition Height="AUTO"/>
             </Grid.RowDefinitions>
 
-            <BoxView BackgroundColor="{StaticResource PointsTextColor}"/>
+            <BoxView BackgroundColor="{StaticResource PrimaryThemeColor}"/>
             <Image Source="F1Logo" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="Center"/>
 
             <ListView Grid.Row="1" x:Name="menuListView" SeparatorVisibility="None" Margin="20">

@@ -26,8 +26,8 @@
                     <RowDefinition Height="200"/>
                     <RowDefinition Height="20"/>
                 </Grid.RowDefinitions>
-                <Image Source="DriversHeader.png" Aspect="AspectFill"/>
-                <Label Text="2017 Race Schedule" Style="{StaticResource ImageHeaderLabel}"/>
+                <Image Source="RaceBackground3.png" Aspect="AspectFill"/>
+                <Label Text="Race Schedule" Style="{StaticResource ImageHeaderLabel}"/>
             </Grid>
 
         </ListView.Header>
@@ -36,9 +36,9 @@
             <Grid RowSpacing="0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="32" />
-                    <RowDefinition Height="AUTO" />
+                    <RowDefinition Height="200" />
                 </Grid.RowDefinitions>
-                <Image Grid.Row="2" Aspect="AspectFill" HorizontalOptions="Fill" VerticalOptions="End" Source="F1Footer.png" />
+                <Image Grid.Row="2" Aspect="AspectFill" Source="F1Footer.png" />
             </Grid>
         </ListView.Footer>
 
@@ -56,13 +56,13 @@
                             <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
 
-                        <Label HorizontalOptions="Center" Style="{StaticResource TableValueLabel}" Text="{Binding Date, StringFormat='{0:MMM dd}'}" VerticalOptions="Center"/>
+                        <Label HorizontalOptions="Center" Style="{StaticResource TimeLineDateLabel}" Text="{Binding Date, StringFormat='{0:MMM dd}'}" />
 
                         <Label Grid.Column="2" Margin="20,0" Style="{StaticResource RaceNameLabel}" Text="{Binding Name}" />
 
                         <Label Grid.Row="1" Grid.Column="2" Margin="20,0" Style="{StaticResource RaceTrackLabel}" Text="{Binding Circuit}" />
 
-                        <BoxView Grid.RowSpan="2" Grid.Column="1" Margin="0,3,0,-3" BackgroundColor="{StaticResource PointsTextColor}" HorizontalOptions="Center" VerticalOptions="Fill" WidthRequest="3" 
+                        <BoxView Grid.RowSpan="2" Grid.Column="1" Margin="0,3,0,-3" BackgroundColor="{StaticResource PrimaryThemeColor}" HorizontalOptions="Center" VerticalOptions="Fill" WidthRequest="3" 
                                  IsVisible="{Binding IsLast, Converter={local:NotBooleanConverter}}"/>
 
                         <Image Grid.Column="1" HorizontalOptions="Center" Source="Bullet.png" VerticalOptions="Start" />

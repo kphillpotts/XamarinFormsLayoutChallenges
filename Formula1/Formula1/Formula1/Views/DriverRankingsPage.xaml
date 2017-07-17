@@ -42,7 +42,7 @@
 
                         <StackLayout Grid.Column="2" VerticalOptions="Center">
                             <Label Text="{Binding Points}" Style="{StaticResource PointsLabel}"/>
-                            <Image Source="{Binding Country}" Style="{StaticResource FlagImage}"/>
+                            <Image Source="{Binding CountryFlag}" Style="{StaticResource FlagImage}"/>
                         </StackLayout>
 
                         <BoxView HeightRequest="1" Grid.Row="1" Grid.Column="1" BackgroundColor="{StaticResource SeperatorColor}"/>                    </Grid>

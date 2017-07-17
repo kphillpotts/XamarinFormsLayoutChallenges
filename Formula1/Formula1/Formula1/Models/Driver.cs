@@ -21,7 +21,13 @@ namespace Formula1.Models
         public string PlaceOfBirth { get; set; }
         public string Bio { get; set; }
 
-        public string CountryFlag => $"{Country}.png".Replace(" ", "");
+        public string CountryFlag 
+        {
+            get
+            {
+                return $"{Country}.png".Replace(" ", "");
+            }
+        }
 
         public string Photo
         {

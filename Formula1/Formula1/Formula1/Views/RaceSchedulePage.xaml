@@ -4,7 +4,7 @@
              x:Class="Formula1.RaceSchedulePage"
             xmlns:local="clr-namespace:Formula1;assembly=Formula1"
             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
-            Title = "Race Schedule"
+            Title = "Races"
     BackgroundColor="White">
 
     <ContentPage.Resources>

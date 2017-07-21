@@ -1,9 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:local="clr-namespace:Formula1;assembly=Formula1"
-             x:Class="Formula1.RaceDetailsPage"
-             BackgroundColor="White">
+            x:Class="Formula1.RaceDetailsPage"
+            Title="{Binding Name}"
+            BackgroundColor="White">
 
     <ScrollView>
         <StackLayout Orientation="Vertical">
